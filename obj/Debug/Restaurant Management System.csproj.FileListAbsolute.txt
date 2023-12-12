@@ -1,0 +1,20 @@
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\Restaurant Management System.exe.config
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\Restaurant Management System.exe
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\Restaurant Management System.pdb
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\Guna.UI2.dll
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.AssemblyReference.cache
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.GenerateResource.cache
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.CopyComplete
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant Management System.exe
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant Management System.pdb
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Login.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.pageprincipale.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\MvvmDialogs.dll
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\MvvmDialogs.xml
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.sampleViews.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Home.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.CategoryAdd.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.CategoryView.resources

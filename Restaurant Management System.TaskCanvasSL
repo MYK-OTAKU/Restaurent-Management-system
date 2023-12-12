@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SerializableModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <tasks>
+    <tasks>
+      <Task>
+        <blocks />
+        <tabs>
+          <DocumentTab>
+            <name>pageprincipale.cs [Design]</name>
+            <path>pageprincipale.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+          </DocumentTab>
+          <DocumentTab>
+            <name>Login.Designer.cs</name>
+            <path>Login.Designer.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.Designer.cs</absolutePath>
+            <position>
+              <line>248</line>
+              <column>1</column>
+              <lineHash>ECtRuXZaVqPomffPDuOOUlH5xQOzV7MwpJGD63sVVgQ=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>MainClass.cs</name>
+            <path>MainClass.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\MainClass.cs</absolutePath>
+            <position>
+              <line>86</line>
+              <column>1</column>
+              <lineHash>ECtRuXZaVqPomffPDuOOUlH5xQOzV7MwpJGD63sVVgQ=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>Login.cs [Design]</name>
+            <path>Login.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+            <position>
+              <line>53</line>
+              <column>10</column>
+              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>Login.cs</name>
+            <path>Login.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
+            <position>
+              <line>53</line>
+              <column>10</column>
+              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>pageprincipale.Designer.cs</name>
+            <path>pageprincipale.Designer.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.Designer.cs</absolutePath>
+            <position>
+              <line>62</line>
+              <column>17</column>
+              <lineHash>U6NdteSfNnAUUigxpwKEYAQVZZP512VxuQmagVerfVU=</lineHash>
+            </position>
+          </DocumentTab>
+        </tabs>
+        <name>Misc</name>
+        <selectedBlock>-1</selectedBlock>
+        <selectedTab>-1</selectedTab>
+        <startupProjects />
+        <startupProjectsInitialized>false</startupProjectsInitialized>
+      </Task>
+    </tasks>
+    <selectedTask>0</selectedTask>
+  </tasks>
+</SerializableModel>

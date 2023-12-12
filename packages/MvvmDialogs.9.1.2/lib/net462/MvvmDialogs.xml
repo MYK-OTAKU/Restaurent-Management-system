@@ -1,0 +1,1302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MvvmDialogs</name>
+    </assembly>
+    <members>
+        <member name="T:MvvmDialogs.DialogFactories.IDialogFactory">
+            <summary>
+            Interface responsible for creating dialogs.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogFactories.IDialogFactory.Create(System.Type)">
+            <summary>
+            Creates a <see cref="T:MvvmDialogs.IWindow"/> of specified type.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.DialogFactories.ReflectionDialogFactory">
+            <summary>
+            Class responsible for creating dialogs using reflection.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogFactories.ReflectionDialogFactory.Create(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.DialogFactories.WindowWrapper">
+            <summary>
+            Class wrapping an instance of <see cref="T:System.Windows.Window"/> in <see cref="T:MvvmDialogs.IWindow"/>.
+            </summary>
+            <seealso cref="T:MvvmDialogs.IWindow" />
+        </member>
+        <member name="M:MvvmDialogs.DialogFactories.WindowWrapper.#ctor(System.Windows.Window)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.DialogFactories.WindowWrapper"/> class.
+            </summary>
+            <param name="window">The window.</param>
+        </member>
+        <member name="P:MvvmDialogs.DialogFactories.WindowWrapper.DataContext">
+            <inheritdoc />
+        </member>
+        <member name="P:MvvmDialogs.DialogFactories.WindowWrapper.DialogResult">
+            <inheritdoc />
+        </member>
+        <member name="P:MvvmDialogs.DialogFactories.WindowWrapper.Owner">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogFactories.WindowWrapper.ShowDialog">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogFactories.WindowWrapper.Show">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.DialogNotFoundException">
+            <summary>
+            Exception thrown by <see cref="T:MvvmDialogs.IDialogService"/> when a certain dialog isn't found.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.DialogNotFoundException"/> class.
+            </summary>
+            <param name="message">
+            The error message that explains the reason for the exception.
+            </param>
+            <param name="innerException">
+            The exception that is the cause of the current exception, or a null reference if no
+            inner exception is specified.
+            </param>
+        </member>
+        <member name="M:MvvmDialogs.DialogNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.DialogNotFoundException"/> class.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the
+            exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the
+            source or destination.
+            </param>
+        </member>
+        <member name="T:MvvmDialogs.DialogService">
+            <summary>
+            Class abstracting the interaction between view models and views when it comes to
+            opening dialogs using the MVVM pattern in WPF.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.DialogService"/> class.
+            </summary>
+            <remarks>
+            By default <see cref="T:MvvmDialogs.DialogFactories.ReflectionDialogFactory"/> is used as dialog factory,
+            <see cref="T:MvvmDialogs.DialogTypeLocators.NamingConventionDialogTypeLocator"/> is used as dialog type locator
+            and <see cref="T:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory"/> is used as framework dialog factory.
+            </remarks>
+        </member>
+        <member name="M:MvvmDialogs.DialogService.#ctor(MvvmDialogs.DialogFactories.IDialogFactory,MvvmDialogs.DialogTypeLocators.IDialogTypeLocator,MvvmDialogs.FrameworkDialogs.IFrameworkDialogFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.DialogService"/> class.
+            </summary>
+            <param name="dialogFactory">
+            Factory responsible for creating dialogs. Default value is an instance of
+            <see cref="T:MvvmDialogs.DialogFactories.ReflectionDialogFactory"/>.
+            </param>
+            <param name="dialogTypeLocator">
+            Locator responsible for finding a dialog type matching a view model. Default value is
+            an instance of <see cref="T:MvvmDialogs.DialogTypeLocators.NamingConventionDialogTypeLocator"/>.
+            </param>
+            <param name="frameworkDialogFactory">
+            Factory responsible for creating framework dialogs. Default value is an instance of
+            <see cref="T:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory"/>.
+            </param>
+        </member>
+        <member name="M:MvvmDialogs.DialogService.Show``1(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowCustom``1(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.Show(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowDialog``1(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowCustomDialog``1(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.Activate(System.ComponentModel.INotifyPropertyChanged)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.Close(System.ComponentModel.INotifyPropertyChanged)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowMessageBox(System.ComponentModel.INotifyPropertyChanged,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowMessageBox(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowOpenFileDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowSaveFileDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.ShowFolderBrowserDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.DialogService.FindOwnerWindow(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Finds window corresponding to specified view model.
+            </summary>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            The view of specified view model has not been registered.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            The view of specified view model has no owner.
+            </exception>
+        </member>
+        <member name="T:MvvmDialogs.DialogServiceViews">
+            <summary>
+            Class containing means to register a <see cref="T:System.Windows.FrameworkElement"/> as a view for a view
+            model when using the MVVM pattern. The view will then be used by the
+            <see cref="T:MvvmDialogs.DialogService"/> when opening dialogs.
+            </summary>
+        </member>
+        <member name="F:MvvmDialogs.DialogServiceViews.InternalViews">
+            <summary>
+            The registered views.
+            </summary>
+        </member>
+        <member name="F:MvvmDialogs.DialogServiceViews.IsRegisteredProperty">
+            <summary>
+            Attached property describing whether a <see cref="T:System.Windows.FrameworkElement"/> is acting as a
+            view for a view model when using the MVVM pattern.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.GetIsRegistered(System.Windows.DependencyObject)">
+            <summary>
+            Gets value describing whether <see cref="T:System.Windows.DependencyObject"/> is acting as a view for a
+            view model when using the MVVM pattern
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.SetIsRegistered(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets value describing whether <see cref="T:System.Windows.DependencyObject"/> is acting as a view for a
+            view model when using the MVVM pattern
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.IsRegisteredChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Is responsible for handling <see cref="F:MvvmDialogs.DialogServiceViews.IsRegisteredProperty"/> changes, i.e.
+            whether <see cref="T:System.Windows.FrameworkElement"/> is acting as a view for a view model when using
+            the MVVM pattern.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.DialogServiceViews.Views">
+            <summary>
+            Gets the registered views on the current thread.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.DialogServiceViews.AllViews">
+            <summary>
+            Gets the registered views on all thread.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.Register(MvvmDialogs.Views.IView)">
+            <summary>
+            Registers specified view.
+            </summary>
+            <param name="view">The view to register.</param>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.Clear">
+            <summary>
+            Clears the registered views.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.Unregister(MvvmDialogs.Views.IView)">
+            <summary>
+            Unregisters specified view.
+            </summary>
+            <param name="view">The view to unregister.</param>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.LateRegister(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Callback for late view register. It wasn't possible to do a instant register since the
+            view wasn't at that point part of the logical nor visual tree.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogServiceViews.OwnerClosed(System.Object,System.EventArgs)">
+            <summary>
+            Handles owner window closed. All views acting within the closed window should be
+            unregistered.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache">
+            <summary>
+            A cache holding the known mappings between view model types and dialog types.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache"/> class.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache.Add(System.Type,System.Type)">
+            <summary>
+            Adds the specified view model type with its corresponding dialog type.
+            </summary>
+            <param name="viewModelType">Type of the view model.</param>
+            <param name="dialogType">Type of the dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache.Get(System.Type)">
+            <summary>
+            Gets the dialog type for specified view model type.
+            </summary>
+            <param name="viewModelType">Type of the view model.</param>
+            <returns>The dialog type if found; otherwise null.</returns>
+        </member>
+        <member name="M:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache.Clear">
+            <summary>
+            Removes all view model types with its corresponding dialog types.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.DialogTypeLocators.DialogTypeLocatorCache.Count">
+            <summary>
+            Gets the number of dialog type/view model type pairs contained in the cache.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.DialogTypeLocators.IDialogTypeLocator">
+            <summary>
+            Interface responsible for finding a dialog type matching a view model.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogTypeLocators.IDialogTypeLocator.Locate(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Locates a dialog type based on the specified view model.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.DialogTypeLocators.NamingConventionDialogTypeLocator">
+            <summary>
+            Dialog type locator responsible for locating dialog types for specified view models based
+            on a naming convention used in a multitude of articles and code samples regarding the MVVM
+            pattern.
+            <para/>
+            The convention states that if the name of the view model is
+            'MyNamespace.ViewModels.MyDialogViewModel' then the name of the dialog is
+            'MyNamespace.Views.MyDialog'.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.DialogTypeLocators.NamingConventionDialogTypeLocator.Locate(System.ComponentModel.INotifyPropertyChanged)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory">
+            <summary>
+            Default framework dialog factory that will create instances of standard Windows dialogs.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory.CreateMessageBox(MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory.CreateOpenFileDialog(MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory.CreateSaveFileDialog(MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.DefaultFrameworkDialogFactory.CreateFolderBrowserDialog(MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.FileDialogSettings">
+            <summary>
+            Settings for <see cref="T:System.Windows.Forms.FileDialog"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.AddExtension">
+            <summary>
+            Gets or sets a value indicating whether a file dialog automatically adds an extension
+            to a file name if the user omits an extension.
+            </summary>
+            <value>
+            <c>true</c> if extensions are added; otherwise, <c>false</c>. The default is
+            <c>true</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.CheckPathExists">
+            <summary>
+            Gets or sets a value that specifies whether warnings are displayed if the user types
+            invalid paths and file names.
+            </summary>
+            <value>
+            <c>true</c> if warnings are displayed; otherwise, <c>false</c>. The default is
+            <c>true</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.CustomPlaces">
+            <summary>
+            Gets or sets the list of custom places for file dialog boxes.
+            </summary>
+            <value>
+            The list of custom places.
+            </value>
+            <remarks>
+            Starting in Windows Vista, open and save file dialog boxes have a <b>Favorite Links</b>
+            panel on the left side of the dialog box that allows the user to quickly navigate to a
+            different location. These links are called custom places. This property allows you to
+            modify the list that appears when your application uses a file dialog box.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.DefaultExt">
+            <summary>
+            Gets or sets a value that specifies the default extension string to use to filter the
+            list of files that are displayed.
+            </summary>
+            <value>
+            The default extension string. The default is <see cref="F:System.String.Empty"/>.
+            </value>
+            <remarks>
+            The extension string must contain the leading period. For example, set the
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.DefaultExt"/> property to ".txt" to select all text files.
+            <para/>
+            By default, the <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.AddExtension"/> property attempts to determine the extension
+            to filter the displayed file list from the <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter"/> property. If the
+            extension cannot be determined from the <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter"/> property,
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.DefaultExt"/> will be used instead.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.DereferenceLinks">
+            <summary>
+            Gets or sets a value indicating whether a file dialog returns either the location of
+            the file referenced by a shortcut or the location of the shortcut file (.lnk).
+            </summary>
+            <value>
+            <c>true</c> to return the location referenced; <c>false</c> to return the shortcut
+            location. The default is <c>true</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FileName">
+            <summary>
+            Gets or sets a string containing the full path of the file selected in a file dialog.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that is the full path of the file selected in the file dialog.
+            The default is <see cref="F:System.String.Empty"/>.
+            </value>
+            <remarks>
+            If more than one file name is selected (length of <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FileNames"/> is greater
+            than one) then <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FileName"/> contains the first selected file name. If no file
+            name is selected, this property contains <see cref="F:System.String.Empty"/> rather than
+            <c>null</c>.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FileNames">
+            <summary>
+            Gets an array that contains one file name for each selected file.
+            </summary>
+            <value>
+            An array of <see cref="T:System.String"/> that contains one file name for each selected file.
+            The default is an array with a single item whose value is <see cref="F:System.String.Empty"/>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter">
+            <summary>
+            Gets or sets the filter string that determines what types of files are displayed from
+            either the open file dialog or the save file dialog.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that contains the filter. The default is
+            <see cref="F:System.String.Empty"/>, which means that no filter is applied and all file types
+            are displayed.
+            </value>
+            <remarks>
+            If <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter"/> is either <c>null</c> or <see cref="F:System.String.Empty"/>, all files
+            are displayed, and folders are always displayed.
+            <para/>
+            You can specify a subset of file types to be displayed by setting the
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter"/> property. Each file type can represent a specific type of file,
+            such as the following:
+            <list type="bullet">
+            <item><description>Word Documents (*.doc)</description></item>
+            <item><description>Excel Worksheets (*.xls)</description></item>
+            <item><description>PowerPoint Presentations (*.ppt)</description></item>
+            </list>
+            Alternatively, a file type can represent a group of related file types, such as the
+            following:
+            <list type="bullet">
+            <item><description>Office Files (*.doc, *.xls, *.ppt)</description></item>
+            <item><description>All Files (*.*)</description></item>
+            </list>
+            To specify a subset of the types of files that are displayed, you set the
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter"/> property with a string value (the <i>filter string</i>) that
+            specifies one or more types of files to filter by. The following shows the expected
+            format of the filter string:
+            <code>
+            FileType1[[|FileType2]...[|FileTypeN]]
+            </code>
+            You use the following format to describe each file type:
+            <code>
+            Label|Extension1[[;Extension2]...[;ExtensionN]]
+            </code>
+            The <i>Label</i> part is a human-readable string value that describes the file type,
+            such as the following:
+            <list type="bullet">
+            <item><description>"Word Documents"</description></item>
+            <item><description>"Excel Worksheets"</description></item>
+            <item><description>"PowerPoint Presentations"</description></item>
+            <item><description>"Office Files"</description></item>
+            <item><description>"All Files"</description></item>
+            </list>
+            Each file type must be described by at least one <i>Extension</i>. If more than one
+            <i>Extension</i> is used, each <i>Extension</i> must be separated by a semicolon (";").
+            For example:
+            <list type="bullet">
+            <item><description>"*.doc"</description></item>
+            <item><description>"*.xls;"</description></item>
+            <item><description>"*.ppt"</description></item>
+            <item><description>"*.doc;*.xls;*.ppt"</description></item>
+            <item><description>"*.*"</description></item>
+            </list>
+            The following are complete examples of valid <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Filter"/> string values:
+            <list type="bullet">
+            <item><description>Word Documents|*.doc</description></item>
+            <item><description>Excel Worksheets|*.xls</description></item>
+            <item><description>PowerPoint Presentations|*.ppt</description></item>
+            <item><description>Office Files|*.doc;*.xls;*.ppt</description></item>
+            <item><description>All Files|*.*</description></item>
+            <item><description>Word Documents|*.doc|Excel Worksheets|*.xls|PowerPoint Presentations|*.ppt|Office Files|*.doc;*.xls;*.ppt|All Files|*.*</description></item>
+            </list>
+            Each file type that is included in the filter is added as a separate item to the
+            <b>Files of type</b>: drop-down list in the open file dialog or the save file dialog.
+            <para/>
+            The user can choose a file type from this list to filter by. By default, the first item
+            in the list (for example, the first file type) is selected when the open file dialog or
+            save file dialog is displayed. To specify that another file type to be selected, you
+            set the <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FilterIndex"/> property before showing the open file dialog or the
+            save file dialog.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FilterIndex">
+            <summary>
+            Gets or sets the index of the filter currently selected in a file dialog.
+            </summary>
+            <value>
+            The <see cref="T:System.Int32" /> that is the index of the selected filter. The default is 1.
+            </value>
+            <remarks>
+            This index is 1-based, not 0-based, due to compatibility requirements with the
+            underlying Win32 API.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.InitialDirectory">
+            <summary>
+            Gets or sets the initial directory that is displayed by a file dialog.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that contains the initial directory. The default is
+            <see cref="F:System.String.Empty"/>.
+            </value>
+            <remarks>
+            If there is no initial directory set, this property will contain
+            <see cref="F:System.String.Empty"/> rather than a <c>null</c> string.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.SafeFileName">
+            <summary>
+            Gets a string that only contains the file name for the selected file.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that only contains the file name for the selected file. The
+            default is <see cref="F:System.String.Empty"/>, which is also the value when either no file is
+            selected or a directory is selected.
+            </value>
+            <remarks>
+            This value is the <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FileName"/> with all path information removed. Removing
+            the paths makes the value appropriate for use in partial trust applications, since it
+            prevents applications from discovering information about the local file system.
+            <para/>
+            If more than one file name is selected (length of <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.SafeFileNames"/> is
+            greater than one) then this property contains only the first selected file name.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.SafeFileNames">
+            <summary>
+            Gets an array that contains one safe file name for each selected file.
+            </summary>
+            <value>
+            An array of <see cref="T:System.String"/> that contains one safe file name for each selected
+            file. The default is an array with a single item whose value is
+            <see cref="F:System.String.Empty"/>.
+            </value>
+            <remarks>
+            This value is the <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.FileNames"/> with all path information removed. Removing
+            the paths makes the value appropriate for use in partial trust applications, since it
+            prevents applications from discovering information about the local file system.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Title">
+            <summary>
+            Gets or sets the text that appears in the title bar of a file dialog.
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> that is the text that appears in the title bar of a file dialog.
+            The default is <see cref="F:System.String.Empty"/>.
+            </value>
+            <remarks>
+            If <see cref="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.Title"/> is <c>null</c> or <see cref="F:System.String.Empty"/>, a default,
+            localized value is used, such as "Save As" or "Open".
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FileDialogSettings.ValidateNames">
+            <summary>
+            Gets or sets a value indicating whether the dialog accepts only valid Win32 file names.
+            </summary>
+            <value>
+            <c>true</c> if warnings will be shown when an invalid file name is provided; otherwise,
+            <c>false</c>. The default is <c>true</c>.
+            </value>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings">
+            <summary>
+            Settings for <see cref="T:System.Windows.Forms.FolderBrowserDialog"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.Description">
+            <summary>
+            Gets or sets the descriptive text displayed above the tree view control in the dialog
+            box.
+            </summary>
+            <value>
+            The description to display. The default is an empty string ("").
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.RootFolder">
+            <summary>
+            Gets or sets the root folder where the browsing starts from.
+            </summary>
+            <value>
+            One of the <see cref="T:System.Environment.SpecialFolder"/> values. The default is
+            <c>Desktop</c>.
+            </value>
+            <remarks>
+            Only the specified folder and any subfolders that are beneath it will appear in the dialog
+            box and be selectable. The <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.SelectedPath"/> property, along with
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.RootFolder"/>, determines what the selected folder will be when the dialog
+            box is displayed, as long as <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.SelectedPath"/> is an absolute path that is a
+            subfolder of <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.RootFolder"/> (or more accurately, points to a subfolder of the
+            shell namespace represented by <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.RootFolder"/>).
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.SelectedPath">
+            <summary>
+            Gets or sets the path selected by the user.
+            </summary>
+            <value>
+            The path of the folder first selected in the dialog box or the last folder selected by
+            the user. The default is an empty string ("").
+            </value>
+            <remarks>
+            If the <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.SelectedPath"/> property is set before showing the dialog box, the
+            folder with this path will be the selected folder, as long as
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.SelectedPath"/> is set to an absolute path that is a subfolder of
+            <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.RootFolder"/> (or more accurately, points to a subfolder of the shell
+            namespace represented by <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.RootFolder"/>).
+            <para/>
+            If the <see cref="M:MvvmDialogs.IDialogService.ShowFolderBrowserDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)"/> returns <c>true</c>,
+            meaning the user clicked the <c>OK</c> button, the <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.SelectedPath"/> property
+            will return a string containing the path to the selected folder. If
+            <see cref="M:MvvmDialogs.IDialogService.ShowFolderBrowserDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)"/> returns <c>false</c>, meaning the
+            user canceled out of the dialog box, this property will have the same value that it had
+            prior to displaying the dialog box. If the user selects a folder that does not have a
+            physical path (for example, My Computer), the <c>OK</c> button on the dialog box will
+            be disabled.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.ShowNewFolderButton">
+            <summary>
+            Gets or sets a value indicating whether the <b>New Folder</b> button appears in the
+            folder browser dialog box.
+            </summary>
+            <value>
+            <c>true</c> if the <b>New Folder</b> button is shown in the dialog box; otherwise,
+            <c>false</c>. The default is <c>true</c>.
+            </value>
+            <remarks>
+            When <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.ShowNewFolderButton"/> is <c>true</c>, the <b>New Folder</b> button is
+            visible, giving the user a chance to create a folder. When the user clicks the
+            <b>New Folder</b> button, a new folder is created and the user is prompted to specify
+            the folder name. The selected node in the tree becomes the parent of the new folder.
+            The actual caption of the <b>New Folder</b> button can vary depending upon the
+            operating system.
+            <para/>
+            NOTE: Setting <see cref="P:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings.ShowNewFolderButton"/> to <c>false</c> does not work on
+            Windows 2000.
+            </remarks>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettingsSync">
+            <summary>
+            Class responsible for synchronizing settings between
+            <see cref="T:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings" /> and <see cref="T:System.Windows.Forms.FolderBrowserDialog" />.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogWrapper">
+            <summary>
+            Class wrapping <see cref="T:System.Windows.Forms.FolderBrowserDialog"/>.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogWrapper.#ctor(MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogWrapper"/> class.
+            </summary>
+            <param name="settings">The settings for the folder browser dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogWrapper.ShowDialog(System.Windows.Window)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.IFrameworkDialog">
+            <summary>
+            Interface representing a framework dialog.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.IFrameworkDialog.ShowDialog(System.Windows.Window)">
+            <summary>
+            Opens a framework dialog with specified owner.
+            </summary>
+            <param name="owner">
+            Handle to the window that owns the dialog.
+            </param>
+            <returns>
+            true if user clicks the OK button; otherwise false.
+            </returns>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.IFrameworkDialogFactory">
+            <summary>
+            Interface responsible for creating framework dialogs.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.IFrameworkDialogFactory.CreateMessageBox(MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings)">
+            <summary>
+            Create an instance of the Windows message box.
+            </summary>
+            <param name="settings">The settings for the message box.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.IFrameworkDialogFactory.CreateOpenFileDialog(MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings)">
+            <summary>
+            Create an instance of the Windows open file dialog.
+            </summary>
+            <param name="settings">The settings for the open file dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.IFrameworkDialogFactory.CreateSaveFileDialog(MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings)">
+            <summary>
+            Create an instance of the Windows save file dialog.
+            </summary>
+            <param name="settings">The settings for the save file dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.IFrameworkDialogFactory.CreateFolderBrowserDialog(MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)">
+            <summary>
+            Create an instance of the Windows folder browser dialog.
+            </summary>
+            <param name="settings">The settings for the folder browser dialog.</param>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.MessageBox.IMessageBox">
+            <summary>
+            Interface representing a message box.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.MessageBox.IMessageBox.Show(System.Windows.Window)">
+            <summary>
+            Opens a message box with specified owner.
+            </summary>
+            <param name="owner">
+            Handle to the window that owns the dialog.
+            </param>
+            <returns>
+            A <see cref="T:System.Windows.MessageBoxResult"/> value that specifies which message box button is
+            clicked by the user.
+            </returns>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings">
+            <summary>
+            Settings for <see cref="T:System.Windows.MessageBox"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings.Button">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.MessageBoxButton"/> value that specifies which button or
+            buttons to display. Default value is <see cref="F:System.Windows.MessageBoxButton.OK"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings.Caption">
+            <summary>
+            Gets or sets the <see cref="T:System.String"/> that specifies the title bar caption to display.
+            Default value is an empty string.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings.DefaultResult">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.MessageBoxResult"/> value that specifies the default result
+            of the message box. Default value is <see cref="F:System.Windows.MessageBoxResult.None"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings.Icon">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.MessageBoxImage"/> value that specifies the icon to
+            display. Default value is <see cref="F:System.Windows.MessageBoxImage.None"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings.MessageBoxText">
+            <summary>
+            Gets or sets the <see cref="T:System.String"/> that specifies the text to display.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings.Options">
+            <summary>
+            Gets or sets a <see cref="T:System.Windows.MessageBoxOptions"/> value object that specifies the options.
+            Default value is <see cref="F:System.Windows.MessageBoxOptions.None"/>.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxWrapper">
+            <summary>
+            Class wrapping <see cref="T:System.Windows.MessageBox"/>.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxWrapper.#ctor(MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxWrapper"/> class.
+            </summary>
+            <param name="settings">The settings for the folder browser dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxWrapper.#ctor(MvvmDialogs.FrameworkDialogs.MessageBox.IMessageBoxShow,MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxWrapper"/> class.
+            </summary>
+            <param name="messageBoxShow">
+            The interface responsible for showing the actual message box.
+            </param>
+            <param name="settings">The settings for the folder browser dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxWrapper.Show(System.Windows.Window)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings">
+            <summary>
+            Settings for <see cref="T:System.Windows.Forms.OpenFileDialog"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings.CheckFileExists">
+            <summary>
+            Gets or sets a value indicating whether a file dialog displays a warning if the user
+            specifies a file name that does not exist.
+            </summary>
+            <value>
+            <c>true</c> if warnings are displayed; otherwise, <c>false</c>. The default in this
+            class is <c>true</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings.Multiselect">
+            <summary>
+            Gets or sets an option indicating whether the dialog box allows users to select
+            multiple files.
+            </summary>
+            <value>
+            <c>true</c> if multiple selections are allowed; otherwise, <c>false</c>. The default is
+            <c>false</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings.ReadOnlyChecked">
+            <summary>
+            Gets or sets a value indicating whether the read-only check box displayed by the open
+            file dialog is selected.
+            </summary>
+            <value>
+            <c>true</c> if the checkbox is selected; otherwise, <c>false</c>. The default is
+            <c>false</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings.ShowReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the open file dialog contains a read-only check
+            box.
+            </summary>
+            <value>
+            <c>true</c> if the checkbox is displayed; otherwise, <c>false</c>. The default is
+            <c>false</c>.
+            </value>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettingsSync">
+            <summary>
+            Class responsible for synchronizing settings between <see cref="T:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings" />
+            and <see cref="T:Microsoft.Win32.OpenFileDialog" />.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogWrapper">
+            <summary>
+            Class wrapping <see cref="T:Microsoft.Win32.OpenFileDialog"/>.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogWrapper.#ctor(MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogWrapper"/> class.
+            </summary>
+            <param name="settings">The settings for the open file dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogWrapper.ShowDialog(System.Windows.Window)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings">
+            <summary>
+            Settings for <see cref="T:System.Windows.Forms.SaveFileDialog"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings.CheckFileExists">
+            <summary>
+            Gets or sets a value indicating whether a file dialog displays a warning if the user
+            specifies a file name that does not exist.
+            </summary>
+            <value>
+            <c>true</c> if warnings are displayed; otherwise, <c>false</c>. The default in this
+            class is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings.CreatePrompt">
+            <summary>
+            Gets or sets a value indicating whether the dialog box prompts the user for permission
+            to create a file if the user specifies a file that does not exist.
+            </summary>
+            <value>
+            <c>true</c> if dialog should prompt prior to saving to a filename that did not
+            previously exist; otherwise, <c>false</c>. The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings.OverwritePrompt">
+            <summary>
+            Gets or sets a value indicating whether the dialog box displays a warning if the user
+            specifies the name of a file that already exists.
+            </summary>
+            <value>
+            <c>true</c> if dialog should prompt prior to saving over a filename that previously
+            existed; otherwise, <c>false</c>. The default is <c>true</c>.
+            </value>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettingsSync">
+            <summary>
+            Class responsible for synchronizing settings between <see cref="T:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings" />
+            and <see cref="T:Microsoft.Win32.SaveFileDialog" />.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogWrapper">
+            <summary>
+            Class wrapping <see cref="T:Microsoft.Win32.SaveFileDialog"/>.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogWrapper.#ctor(MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogWrapper"/> class.
+            </summary>
+            <param name="settings">The settings for the save file dialog.</param>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogWrapper.ShowDialog(System.Windows.Window)">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.FrameworkDialogs.Win32Window">
+            <summary>
+            Class describing a <see cref="T:System.Windows.Forms.IWin32Window"/> wrapper around a WPF window.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.FrameworkDialogs.Win32Window.#ctor(System.Windows.Window)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.FrameworkDialogs.Win32Window"/> class.
+            </summary>
+            <param name="window">The WPF window to wrap.</param>
+        </member>
+        <member name="P:MvvmDialogs.FrameworkDialogs.Win32Window.Handle">
+            <inheritdoc />
+        </member>
+        <member name="T:MvvmDialogs.IDialogService">
+            <summary>
+            Interface abstracting the interaction between view models and views when it comes to
+            opening dialogs using the MVVM pattern in WPF.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.Show``1(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Displays a non-modal dialog of specified type <typeparamref name="T"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="viewModel">The view model of the new dialog.</param>
+            <typeparam name="T">The type of the dialog to show.</typeparam>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowCustom``1(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Displays a non-modal custom dialog of specified type <typeparamref name="T"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the custom dialog.
+            </param>
+            <param name="viewModel">The view model of the new custom dialog.</param>
+            <typeparam name="T">The type of the custom dialog to show.</typeparam>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.Show(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Displays a non-modal dialog of a type that is determined by the dialog type locator.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="viewModel">The view model of the new dialog.</param>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowDialog``1(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)">
+            <summary>
+            Displays a modal dialog of specified type <typeparamref name="T"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="viewModel">The view model of the new dialog.</param>
+            <typeparam name="T">The type of the dialog to show.</typeparam>
+            <returns>
+            A nullable value of type <see cref="T:System.Boolean"/> that signifies how a window was closed by
+            the user.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowCustomDialog``1(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)">
+            <summary>
+            Displays a custom modal dialog of specified type <typeparamref name="T"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the custom dialog.
+            </param>
+            <param name="viewModel">The view model of the new custom dialog.</param>
+            <typeparam name="T">The type of the custom dialog to show.</typeparam>
+            <returns>
+            A nullable value of type <see cref="T:System.Boolean"/> that signifies how a window was closed by
+            the user.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)">
+            <summary>
+            Displays a modal dialog of a type that is determined by the dialog type locator.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="viewModel">The view model of the new dialog.</param>
+            <returns>
+            A nullable value of type <see cref="T:System.Boolean"/> that signifies how a window was closed by
+            the user.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.Activate(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Attempts to bring the window to the foreground and activates it.
+            </summary>
+            <param name="viewModel">The view model of the window.</param>
+            <returns>
+            true if the <see cref="T:System.Windows.Window"/> was successfully activated; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.Close(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>
+            Closes a non-modal dialog that previously was opened using <see cref="M:MvvmDialogs.IDialogService.Show(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)"/>,
+            <see cref="M:MvvmDialogs.IDialogService.Show``1(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)"/> or <see cref="M:MvvmDialogs.IDialogService.ShowCustom``1(System.ComponentModel.INotifyPropertyChanged,System.ComponentModel.INotifyPropertyChanged)"/>.
+            </summary>
+            <param name="viewModel">The view model of the dialog to close.</param>
+            <returns>
+            true if the <see cref="T:System.Windows.Window"/> was successfully closed; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowMessageBox(System.ComponentModel.INotifyPropertyChanged,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)">
+            <summary>
+            Displays a message box that has a message, title bar caption, button, and icon; and
+            that accepts a default message box result and returns a result.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="messageBoxText">
+            A <see cref="T:System.String"/> that specifies the text to display.
+            </param>
+            <param name="caption">
+            A <see cref="T:System.String"/> that specifies the title bar caption to display. Default value
+            is an empty string.
+            </param>
+            <param name="button">
+            A <see cref="T:System.Windows.MessageBoxButton"/> value that specifies which button or buttons to
+            display. Default value is <see cref="F:System.Windows.MessageBoxButton.OK"/>.
+            </param>
+            <param name="icon">
+            A <see cref="T:System.Windows.MessageBoxImage"/> value that specifies the icon to display. Default value
+            is <see cref="F:System.Windows.MessageBoxImage.None"/>.
+            </param>
+            <param name="defaultResult">
+            A <see cref="T:System.Windows.MessageBoxResult"/> value that specifies the default result of the
+            message box. Default value is <see cref="F:System.Windows.MessageBoxResult.None"/>.
+            </param>
+            <returns>
+            A <see cref="T:System.Windows.MessageBoxResult"/> value that specifies which message box button is
+            clicked by the user.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowMessageBox(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.MessageBox.MessageBoxSettings)">
+            <summary>
+            Displays a message box that has a message, title bar caption, button, and icon; and
+            that accepts a default message box result and returns a result.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="settings">The settings for the message box dialog.</param>
+            <returns>
+            A <see cref="T:System.Windows.MessageBoxResult"/> value that specifies which message box button is
+            clicked by the user.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowOpenFileDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.OpenFile.OpenFileDialogSettings)">
+            <summary>
+            Displays the <see cref="T:System.Windows.Forms.OpenFileDialog"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="settings">The settings for the open file dialog.</param>
+            <returns>
+            If the user clicks the OK button of the dialog that is displayed, true is returned;
+            otherwise false.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowSaveFileDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.SaveFile.SaveFileDialogSettings)">
+            <summary>
+            Displays the <see cref="T:System.Windows.Forms.SaveFileDialog"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="settings">The settings for the save file dialog.</param>
+            <returns>
+            If the user clicks the OK button of the dialog that is displayed, true is returned;
+            otherwise false.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="M:MvvmDialogs.IDialogService.ShowFolderBrowserDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.FrameworkDialogs.FolderBrowser.FolderBrowserDialogSettings)">
+            <summary>
+            Displays the <see cref="T:System.Windows.Forms.FolderBrowserDialog"/>.
+            </summary>
+            <param name="ownerViewModel">
+            A view model that represents the owner window of the dialog.
+            </param>
+            <param name="settings">The settings for the folder browser dialog.</param>
+            <returns>
+            If the user clicks the OK button of the dialog that is displayed, true is returned;
+            otherwise false.
+            </returns>
+            <exception cref="T:MvvmDialogs.ViewNotRegisteredException">
+            No view is registered with specified owner view model as data context.
+            </exception>
+        </member>
+        <member name="T:MvvmDialogs.IModalDialogViewModel">
+            <summary>
+            A view model representing a modal dialog opened using <see cref="T:MvvmDialogs.IDialogService"/>.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.IModalDialogViewModel.DialogResult">
+            <summary>
+            Gets the dialog result value, which is the value that is returned from the
+            <see cref="M:MvvmDialogs.IDialogService.ShowDialog(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)"/> and <see cref="M:MvvmDialogs.IDialogService.ShowDialog``1(System.ComponentModel.INotifyPropertyChanged,MvvmDialogs.IModalDialogViewModel)"/>
+            methods.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.IWindow">
+            <summary>
+            Interface describing a window.
+            </summary>
+            <remarks>
+            This interface is intended for use when custom windows, i.e. windows not inheriting from
+            <see cref="T:System.Windows.Window"/>, should be shown.
+            </remarks>
+        </member>
+        <member name="P:MvvmDialogs.IWindow.DataContext">
+            <summary>
+            Gets or sets the data context for an element when it participates in data binding.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.IWindow.DialogResult">
+            <summary>
+            Gets or sets the dialog result value, which is the value that is returned from the
+            <see cref="M:MvvmDialogs.IWindow.ShowDialog" /> method.
+            </summary>
+            <value>
+            The default is false.
+            </value>
+        </member>
+        <member name="P:MvvmDialogs.IWindow.Owner">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Controls.ContentControl"/> that owns this <see cref="T:MvvmDialogs.IWindow"/>.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.IWindow.ShowDialog">
+            <summary>
+            Opens a window and returns only when the newly opened window is closed.
+            </summary>
+            <returns>
+            A <see cref="T:System.Nullable`1"/> value that specifies whether the activity was
+            accepted (true) or canceled (false). The return value is the value of the
+            <see cref="P:MvvmDialogs.IWindow.DialogResult"/> property before a window closes.
+            </returns>
+        </member>
+        <member name="M:MvvmDialogs.IWindow.Show">
+            <summary>
+            Opens a window and returns without waiting for the newly opened window to close.
+            </summary>
+        </member>
+        <member name="T:MvvmDialogs.Logging.Logger">
+            <summary>
+            Class responsible for writing log messages.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.Logging.Logger.Writer">
+            <summary>
+            Set this property to expose logs for diagnostics purposes.
+            </summary>
+            <example>
+            This sample shows how messages are logged using <see cref="M:System.Diagnostics.Debug.WriteLine(System.String)"/>.
+            <code>
+            Logger.Writer = message => Debug.WriteLine(message);
+            </code>
+            </example>
+            <exception cref="T:System.ArgumentNullException">
+            value is null.
+            </exception>
+        </member>
+        <member name="T:MvvmDialogs.Reflection.Members">
+            <summary>
+            Class containing methods for extracting member information using reflection.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.Reflection.Members.GetPropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Gets the name of the property.
+            </summary>
+            <typeparam name="T">The type of the class or interface.</typeparam>
+            <typeparam name="TProperty">The type of the property.</typeparam>
+            <param name="propertyExpression">The expression pointing to a property.</param>
+            <returns>The name of the property.</returns>
+        </member>
+        <member name="T:MvvmDialogs.ViewNotRegisteredException">
+            <summary>
+            Exception thrown by <see cref="T:MvvmDialogs.IDialogService"/> when a view isn't registered, but its
+            <see cref="P:System.Windows.FrameworkElement.DataContext"/> is accessing the dialog service.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.ViewNotRegisteredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.ViewNotRegisteredException"/> class.
+            </summary>
+            <param name="message">
+            The error message that explains the reason for the exception.
+            </param>
+            <param name="innerException">
+            The exception that is the cause of the current exception, or a null reference if no
+            inner exception is specified.
+            </param>
+        </member>
+        <member name="M:MvvmDialogs.ViewNotRegisteredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MvvmDialogs.ViewNotRegisteredException"/> class.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the
+            exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the
+            source or destination.
+            </param>
+        </member>
+        <member name="T:MvvmDialogs.Views.IView">
+            <summary>
+            Interface describing a view in WPF.
+            </summary>
+        </member>
+        <member name="E:MvvmDialogs.Views.IView.Loaded">
+            <summary>
+            Occurs when the view is laid out, rendered, and ready for interaction.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.Views.IView.Id">
+            <summary>
+            Gets the id.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.Views.IView.Source">
+            <summary>
+            Gets the source.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.Views.IView.DataContext">
+            <summary>
+            Gets the data context for an element when it participates in data binding.
+            </summary>
+        </member>
+        <member name="P:MvvmDialogs.Views.IView.IsAlive">
+            <summary>
+            Gets an indication whether the view been garbage collected.
+            </summary>
+        </member>
+        <member name="M:MvvmDialogs.Views.IView.GetOwner">
+            <summary>
+            Gets the owning <see cref="T:System.Windows.Window"/>.
+            </summary>
+        </member>
+        <member name="T:System.Windows.FrameworkElementExtensions">
+            <summary>
+            Extension methods for <see cref="T:System.Windows.FrameworkElement"/>.
+            </summary>
+        </member>
+        <member name="M:System.Windows.FrameworkElementExtensions.GetOwner(System.Windows.FrameworkElement)">
+            <summary>
+            Gets the owning <see cref="T:System.Windows.Window"/> of a <see cref="T:System.Windows.FrameworkElement"/>.
+            </summary>
+            <param name="frameworkElement">
+            The <see cref="T:System.Windows.FrameworkElement"/> to find the <see cref="T:System.Windows.Window"/> for.
+            </param> 
+            <returns>The owning <see cref="T:System.Windows.Window"/> if found; otherwise null.</returns>
+        </member>
+    </members>
+</doc>
