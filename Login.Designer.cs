@@ -161,12 +161,13 @@
             this.txtPass.Location = new System.Drawing.Point(25, 298);
             this.txtPass.Margin = new System.Windows.Forms.Padding(5);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '*';
             this.txtPass.PlaceholderText = "";
             this.txtPass.SelectedText = "";
             this.txtPass.ShadowDecoration.Parent = this.txtPass;
             this.txtPass.Size = new System.Drawing.Size(290, 39);
             this.txtPass.TabIndex = 1;
+            this.txtPass.WordWrap = false;
             // 
             // btnLogin
             // 

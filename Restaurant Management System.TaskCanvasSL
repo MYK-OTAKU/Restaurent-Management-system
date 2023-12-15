@@ -3,22 +3,120 @@
   <tasks>
     <tasks>
       <Task>
-        <blocks />
+        <blocks>
+          <ICodeBlock xsi:type="NoteBlock">
+            <absolutePath>C:\Users\Mohamed\AppData\Local\Temp\TaskCanvasNote_5d4404d5-9108-44d4-a89f-64af9a319e59.txt</absolutePath>
+            <first>0</first>
+            <last>0</last>
+            <position>
+              <line>0</line>
+              <column>0</column>
+              <lineHash>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</lineHash>
+            </position>
+            <state>Normal</state>
+            <note />
+            <name>Note</name>
+            <extension>txt</extension>
+          </ICodeBlock>
+        </blocks>
         <tabs>
           <DocumentTab>
-            <name>pageprincipale.cs [Design]</name>
-            <path>pageprincipale.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.cs</absolutePath>
+            <name>MainClass.cs</name>
+            <path>MainClass.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\MainClass.cs</absolutePath>
+            <position>
+              <line>76</line>
+              <column>1</column>
+              <lineHash>ECtRuXZaVqPomffPDuOOUlH5xQOzV7MwpJGD63sVVgQ=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>CategoryView.cs [Design]</name>
+            <path>View\CategoryView.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\View\CategoryView.cs</absolutePath>
             <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
           </DocumentTab>
           <DocumentTab>
-            <name>Login.Designer.cs</name>
-            <path>Login.Designer.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.Designer.cs</absolutePath>
+            <name>SampleAdd.cs [Design]</name>
+            <path>SampleAdd.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\SampleAdd.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
             <position>
-              <line>248</line>
-              <column>1</column>
-              <lineHash>ECtRuXZaVqPomffPDuOOUlH5xQOzV7MwpJGD63sVVgQ=</lineHash>
+              <line>23</line>
+              <column>10</column>
+              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>SampleAdd.cs</name>
+            <path>SampleAdd.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\SampleAdd.cs</absolutePath>
+            <position>
+              <line>23</line>
+              <column>10</column>
+              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>CategoryAdd.cs [Design]</name>
+            <path>Model\CategoryAdd.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Model\CategoryAdd.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+            <position>
+              <line>25</line>
+              <column>13</column>
+              <lineHash>fW22PUi0pyW2E0NAAP/k0RC+Tdj6FLp2Aq90qED+vy4=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>CategoryAdd.cs</name>
+            <path>Model\CategoryAdd.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Model\CategoryAdd.cs</absolutePath>
+            <position>
+              <line>25</line>
+              <column>13</column>
+              <lineHash>fW22PUi0pyW2E0NAAP/k0RC+Tdj6FLp2Aq90qED+vy4=</lineHash>
+            </position>
+          </DocumentTab>
+        </tabs>
+        <name>TEST</name>
+        <selectedBlock>0</selectedBlock>
+        <selectedTab>-1</selectedTab>
+        <startupProjects />
+        <startupProjectsInitialized>false</startupProjectsInitialized>
+      </Task>
+      <Task>
+        <blocks />
+        <tabs>
+          <DocumentTab>
+            <name>pageprincipale.Designer.cs</name>
+            <path>pageprincipale.Designer.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.Designer.cs</absolutePath>
+            <position>
+              <line>403</line>
+              <column>17</column>
+              <lineHash>U6NdteSfNnAUUigxpwKEYAQVZZP512VxuQmagVerfVU=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>Login.cs</name>
+            <path>Login.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
+            <position>
+              <line>58</line>
+              <column>10</column>
+              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>Login.cs [Design]</name>
+            <path>Login.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+            <position>
+              <line>58</line>
+              <column>10</column>
+              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
             </position>
           </DocumentTab>
           <DocumentTab>
@@ -32,35 +130,32 @@
             </position>
           </DocumentTab>
           <DocumentTab>
-            <name>Login.cs [Design]</name>
-            <path>Login.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
+            <name>Login.Designer.cs</name>
+            <path>Login.Designer.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.Designer.cs</absolutePath>
+            <position>
+              <line>260</line>
+              <column>1</column>
+              <lineHash>ECtRuXZaVqPomffPDuOOUlH5xQOzV7MwpJGD63sVVgQ=</lineHash>
+            </position>
+          </DocumentTab>
+          <DocumentTab>
+            <name>pageprincipale.cs [Design]</name>
+            <path>pageprincipale.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.cs</absolutePath>
             <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
-            <position>
-              <line>53</line>
-              <column>10</column>
-              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
-            </position>
           </DocumentTab>
           <DocumentTab>
-            <name>Login.cs</name>
-            <path>Login.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
-            <position>
-              <line>53</line>
-              <column>10</column>
-              <lineHash>QqKbj+5rvocuXtcf4j44LL8s8eXA5U069DrZfx/b/DI=</lineHash>
-            </position>
+            <name>CategoryView.cs [Design]</name>
+            <path>View\CategoryView.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\View\CategoryView.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
           </DocumentTab>
           <DocumentTab>
-            <name>pageprincipale.Designer.cs</name>
-            <path>pageprincipale.Designer.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.Designer.cs</absolutePath>
-            <position>
-              <line>62</line>
-              <column>17</column>
-              <lineHash>U6NdteSfNnAUUigxpwKEYAQVZZP512VxuQmagVerfVU=</lineHash>
-            </position>
+            <name>sampleViews.cs [Design]</name>
+            <path>sampleViews.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\sampleViews.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
           </DocumentTab>
         </tabs>
         <name>Misc</name>

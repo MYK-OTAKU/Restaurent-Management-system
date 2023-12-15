@@ -70,11 +70,11 @@
     <Compile Include="Model\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\CategoryView.cs">
+    <Compile Include="View\CategoryViews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\CategoryView.Designer.cs">
-      <DependentUpon>CategoryView.cs</DependentUpon>
+    <Compile Include="View\CategoryViews.Designer.cs">
+      <DependentUpon>CategoryViews.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -109,8 +109,8 @@
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\CategoryView.resx">
-      <DependentUpon>CategoryView.cs</DependentUpon>
+    <EmbeddedResource Include="View\CategoryViews.resx">
+      <DependentUpon>CategoryViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -219,6 +219,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-search-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\medium-priority-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\11111111111.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

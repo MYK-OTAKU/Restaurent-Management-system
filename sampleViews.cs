@@ -31,5 +31,10 @@ namespace Restaurant_Management_System
         {
 
         }
+
+        private void guna2Separator1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
