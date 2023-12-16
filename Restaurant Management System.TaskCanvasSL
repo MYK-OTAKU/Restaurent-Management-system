@@ -5,7 +5,7 @@
       <Task>
         <blocks>
           <ICodeBlock xsi:type="NoteBlock">
-            <absolutePath>C:\Users\Mohamed\AppData\Local\Temp\TaskCanvasNote_5d4404d5-9108-44d4-a89f-64af9a319e59.txt</absolutePath>
+            <absolutePath>C:\Users\Mohamed\AppData\Local\Temp\TaskCanvasNote_ea5b54ec-72fa-4ba6-a576-24987d05393d.txt</absolutePath>
             <first>0</first>
             <last>0</last>
             <position>
@@ -21,6 +21,24 @@
         </blocks>
         <tabs>
           <DocumentTab>
+            <name>pageprincipale.cs [Design]</name>
+            <path>pageprincipale.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\pageprincipale.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+          </DocumentTab>
+          <DocumentTab>
+            <name>sampleViews.cs [Design]</name>
+            <path>sampleViews.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\sampleViews.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+          </DocumentTab>
+          <DocumentTab>
+            <name>CategoryViews.cs [Design]</name>
+            <path>View\CategoryViews.cs</path>
+            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\View\CategoryViews.cs</absolutePath>
+            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
+          </DocumentTab>
+          <DocumentTab>
             <name>MainClass.cs</name>
             <path>MainClass.cs</path>
             <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\MainClass.cs</absolutePath>
@@ -29,12 +47,6 @@
               <column>1</column>
               <lineHash>ECtRuXZaVqPomffPDuOOUlH5xQOzV7MwpJGD63sVVgQ=</lineHash>
             </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>CategoryView.cs [Design]</name>
-            <path>View\CategoryView.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\View\CategoryView.cs</absolutePath>
-            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
           </DocumentTab>
           <DocumentTab>
             <name>SampleAdd.cs [Design]</name>
@@ -65,7 +77,7 @@
             <position>
               <line>25</line>
               <column>13</column>
-              <lineHash>fW22PUi0pyW2E0NAAP/k0RC+Tdj6FLp2Aq90qED+vy4=</lineHash>
+              <lineHash>ALf2QcyPGtT9WY3QIz73/Am/k8y4Z9nJH9YITm32TIg=</lineHash>
             </position>
           </DocumentTab>
           <DocumentTab>
@@ -75,7 +87,7 @@
             <position>
               <line>25</line>
               <column>13</column>
-              <lineHash>fW22PUi0pyW2E0NAAP/k0RC+Tdj6FLp2Aq90qED+vy4=</lineHash>
+              <lineHash>ALf2QcyPGtT9WY3QIz73/Am/k8y4Z9nJH9YITm32TIg=</lineHash>
             </position>
           </DocumentTab>
         </tabs>
