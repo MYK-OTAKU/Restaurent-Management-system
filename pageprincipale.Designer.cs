@@ -38,7 +38,6 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnsetting = new Guna.UI2.WinForms.Guna2Button();
             this.btnkit = new Guna.UI2.WinForms.Guna2Button();
             this.btnpos = new Guna.UI2.WinForms.Guna2Button();
@@ -48,6 +47,7 @@
             this.btncate = new Guna.UI2.WinForms.Guna2Button();
             this.btnhome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -150,15 +150,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(195, 616);
             this.guna2Panel1.TabIndex = 3;
-            // 
-            // CenterPanel
-            // 
-            this.CenterPanel.Location = new System.Drawing.Point(195, 57);
-            this.CenterPanel.Name = "CenterPanel";
-            this.CenterPanel.ShadowDecoration.Parent = this.CenterPanel;
-            this.CenterPanel.Size = new System.Drawing.Size(938, 559);
-            this.CenterPanel.TabIndex = 5;
-            this.CenterPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CenterPanel_Paint);
             // 
             // btnsetting
             // 
@@ -320,6 +311,7 @@
             this.btncate.TabIndex = 3;
             this.btncate.Text = "Catalogue";
             this.btncate.TextOffset = new System.Drawing.Point(10, 0);
+            this.btncate.Click += new System.EventHandler(this.btncate_Click);
             // 
             // btnhome
             // 
@@ -361,6 +353,19 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // CenterPanel
+            // 
+            this.CenterPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CenterPanel.BackColor = System.Drawing.Color.White;
+            this.CenterPanel.Location = new System.Drawing.Point(195, 57);
+            this.CenterPanel.Name = "CenterPanel";
+            this.CenterPanel.ShadowDecoration.Parent = this.CenterPanel;
+            this.CenterPanel.Size = new System.Drawing.Size(938, 559);
+            this.CenterPanel.TabIndex = 5;
+            this.CenterPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CenterPanel_Paint);
             // 
             // pageprincipale
             // 

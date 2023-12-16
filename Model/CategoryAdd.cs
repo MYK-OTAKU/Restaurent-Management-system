@@ -23,16 +23,16 @@ namespace Restaurant_Management_System
 
         }
         public int id = 0;
-        public virtual void BtnSave_Click(object sender, EventArgs e)
+        public override void BtnSave_Click(object sender, EventArgs e)
         {
             string qry = "";
             if (id == 0)//Insert 
             {
-                qry = " Isert into category Values (@Name)";
+                qry = " Insert into category Values (@Name)";
             }
             else // update
             {
-                qry = " Update category Set CatName =  @Name wherre catID = @id";
+                qry = " Update category Set CatName =  @Name where catID = @id";
             }
             Hashtable ht = new Hashtable();
             ht.Add("@id", id);
@@ -40,10 +40,21 @@ namespace Restaurant_Management_System
 
             if (MainClass.SQL(qry, ht) > 0)
             {
-                MessageBox.Show("Saved Succesqfully ... ");
+                MessageBox.Show("Saved Successfully ... ");
                 id = 0;
+                txtName.Text = "";
                 txtName.Focus();
             }
+
+        }
+
+        public override void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSave_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

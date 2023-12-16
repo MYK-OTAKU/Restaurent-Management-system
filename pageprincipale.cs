@@ -51,5 +51,11 @@ namespace Restaurant_Management_System
         {
             AddControls(new Home());
         }
+
+        private void btncate_Click(object sender, EventArgs e)
+        {
+            AddControls(new CategoryViews());
+
+        }
     }
 }

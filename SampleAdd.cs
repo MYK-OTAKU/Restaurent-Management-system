@@ -24,7 +24,7 @@ namespace Restaurant_Management_System
 
         public virtual void BtnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void SampleAdd_Load(object sender, EventArgs e)
