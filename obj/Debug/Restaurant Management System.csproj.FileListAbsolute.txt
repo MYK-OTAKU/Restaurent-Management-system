@@ -18,3 +18,22 @@ C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restau
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Home.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.CategoryAdd.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.CategoryViews.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\bin\Debug\Restaurant Management System.exe.config
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\bin\Debug\Restaurant Management System.exe
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\bin\Debug\Restaurant Management System.pdb
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\bin\Debug\MvvmDialogs.dll
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\bin\Debug\MvvmDialogs.xml
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.Home.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.CategoryAdd.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.CategoryViews.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.Login.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.pageprincipale.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant_Management_System.sampleViews.resources
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.csproj.CopyComplete
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.exe
+C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.pdb

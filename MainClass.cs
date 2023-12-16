@@ -15,7 +15,7 @@ namespace Restaurant_Management_System
 
 
 
-        public static readonly string con_string = "Data Source=DESKTOP-TIPN3BA\\MSSQLSERVER02;Initial Catalog=Projetdegroupe;Integrated Security=True ";
+        public static readonly string con_string = "Data Source=DESKTOP-3HCL36F\\SQLEXPRESS;Initial Catalog=projetdegroupe;Integrated Security=True";
 
         public static SqlConnection con = new SqlConnection(con_string);
         //Method to check user validation 
