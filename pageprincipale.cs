@@ -57,5 +57,10 @@ namespace Restaurant_Management_System
             AddControls(new CategoryViews());
 
         }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

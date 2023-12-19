@@ -22,27 +22,26 @@ namespace Restaurant_Management_System
         public CategoryViews()
         {
             InitializeComponent();
-
-            // Supposons que tu as déjà créé un GunaDataGridView appelé guna2DataGridView1
-
-            // Définis les propriétés AutoSizeMode pour chaque colonne
+            this.Shown += YourForm_Shown;
+        }
+        private void YourForm_Shown(object sender, EventArgs e)
+        {
+            // Met ce code dans l'événement Shown pour garantir qu'il est exécuté après l'affichage de la fenêtre
             guna2DataGridView1.Columns["dgvSno"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             guna2DataGridView1.Columns["dgvid"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             guna2DataGridView1.Columns["dgvName"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             guna2DataGridView1.Columns["dgvedit"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             guna2DataGridView1.Columns["dgvdel"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-            // Définis les proportions pour chaque colonne avec la propriété FillWeight
-            guna2DataGridView1.Columns["dgvSno"].FillWeight = 0.5f;
+            guna2DataGridView1.Columns["dgvSno"].FillWeight = 1;
             guna2DataGridView1.Columns["dgvid"].FillWeight = 1;
-            guna2DataGridView1.Columns["dgvName"].FillWeight = 5.5f;
+            guna2DataGridView1.Columns["dgvName"].FillWeight = 8.5F;
             guna2DataGridView1.Columns["dgvedit"].FillWeight = 0.5f;
             guna2DataGridView1.Columns["dgvdel"].FillWeight = 0.5f;
 
-            // Ajuste le mode de redimensionnement pour s'assurer qu'il occupe tout l'espace disponible
             guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
         }
+
         // let create table first 
 
         public void GetData()
