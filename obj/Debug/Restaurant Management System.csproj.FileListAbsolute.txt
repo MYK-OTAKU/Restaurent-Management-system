@@ -37,3 +37,6 @@ C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Resta
 C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.csproj.CopyComplete
 C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.exe
 C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Restaurent-Management-system\obj\Debug\Restaurant Management System.pdb
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxNotify.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxOK.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxYesNo.resources
