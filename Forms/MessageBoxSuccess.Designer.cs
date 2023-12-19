@@ -1,6 +1,6 @@
-﻿namespace MyMessageBox
+﻿namespace Restaurant_Management_System.Forms
 {
-    partial class MessageBoxOK
+    partial class MessageBoxSuccess
     {
         /// <summary>
         /// Required designer variable.
@@ -44,15 +44,14 @@
             // 
             // pnlTitleBar
             // 
-            this.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(97)))), ((int)(((byte)(5)))));
+            this.pnlTitleBar.BackColor = System.Drawing.Color.ForestGreen;
             this.pnlTitleBar.Controls.Add(this.titleLbl);
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
             this.pnlTitleBar.Size = new System.Drawing.Size(373, 28);
-            this.pnlTitleBar.TabIndex = 10;
-            this.pnlTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTitleBar_Paint);
+            this.pnlTitleBar.TabIndex = 13;
             // 
             // titleLbl
             // 
@@ -66,7 +65,6 @@
             this.titleLbl.TabIndex = 16;
             this.titleLbl.Text = "Erreur";
             this.titleLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleLbl.Click += new System.EventHandler(this.titleLbl_Click);
             // 
             // btnClose
             // 
@@ -85,25 +83,25 @@
             // 
             // bodyPnl
             // 
+            this.bodyPnl.BackColor = System.Drawing.Color.ForestGreen;
             this.bodyPnl.Controls.Add(this.typePicBox);
             this.bodyPnl.Controls.Add(this.messageLbl);
             this.bodyPnl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyPnl.Location = new System.Drawing.Point(0, 28);
+            this.bodyPnl.Location = new System.Drawing.Point(0, 0);
             this.bodyPnl.Name = "bodyPnl";
-            this.bodyPnl.Size = new System.Drawing.Size(373, 86);
-            this.bodyPnl.TabIndex = 11;
-            this.bodyPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.bodyPnl_Paint);
+            this.bodyPnl.Size = new System.Drawing.Size(373, 117);
+            this.bodyPnl.TabIndex = 14;
             // 
             // messageLbl
             // 
-            this.messageLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(97)))), ((int)(((byte)(5)))));
+            this.messageLbl.BackColor = System.Drawing.Color.ForestGreen;
             this.messageLbl.Dock = System.Windows.Forms.DockStyle.Right;
             this.messageLbl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.messageLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.messageLbl.ForeColor = System.Drawing.SystemColors.Control;
             this.messageLbl.Location = new System.Drawing.Point(112, 0);
             this.messageLbl.Name = "messageLbl";
-            this.messageLbl.Size = new System.Drawing.Size(261, 86);
+            this.messageLbl.Size = new System.Drawing.Size(261, 117);
             this.messageLbl.TabIndex = 0;
             this.messageLbl.Text = "Identifiant ou mot de passe incorrect";
             this.messageLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,56 +109,51 @@
             // 
             // btnOk
             // 
-            this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(0)))));
+            this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOk.FlatAppearance.BorderSize = 0;
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnOk.Location = new System.Drawing.Point(153, 0);
+            this.btnOk.Location = new System.Drawing.Point(149, 3);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(85, 25);
             this.btnOk.TabIndex = 3;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = false;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click_1);
             // 
             // footerPnl
             // 
-            this.footerPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(97)))), ((int)(((byte)(5)))));
+            this.footerPnl.BackColor = System.Drawing.Color.ForestGreen;
             this.footerPnl.Controls.Add(this.btnOk);
             this.footerPnl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footerPnl.Location = new System.Drawing.Point(0, 114);
+            this.footerPnl.Location = new System.Drawing.Point(0, 117);
             this.footerPnl.Name = "footerPnl";
-            this.footerPnl.Size = new System.Drawing.Size(373, 39);
-            this.footerPnl.TabIndex = 0;
-            this.footerPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.footerPnl_Paint);
+            this.footerPnl.Size = new System.Drawing.Size(373, 36);
+            this.footerPnl.TabIndex = 12;
             // 
             // typePicBox
             // 
             this.typePicBox.ErrorImage = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
-            this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
-            this.typePicBox.Location = new System.Drawing.Point(15, 16);
+            this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_verified_check_circle_for_approved_valid_content_96;
+            this.typePicBox.Location = new System.Drawing.Point(12, 34);
             this.typePicBox.Name = "typePicBox";
-            this.typePicBox.Size = new System.Drawing.Size(92, 57);
+            this.typePicBox.Size = new System.Drawing.Size(92, 65);
             this.typePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.typePicBox.TabIndex = 2;
             this.typePicBox.TabStop = false;
-            this.typePicBox.Click += new System.EventHandler(this.typePicBox_Click);
             // 
-            // MessageBoxOK
+            // MessageBoxSuccess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(97)))), ((int)(((byte)(5)))));
             this.ClientSize = new System.Drawing.Size(373, 153);
-            this.Controls.Add(this.bodyPnl);
             this.Controls.Add(this.pnlTitleBar);
+            this.Controls.Add(this.bodyPnl);
             this.Controls.Add(this.footerPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MessageBoxOK";
-            this.ShowInTaskbar = false;
+            this.Name = "MessageBoxSuccess";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MessageBoxCustom";
+            this.Text = "MessageBoxSuccess";
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlTitleBar.PerformLayout();
             this.bodyPnl.ResumeLayout(false);
@@ -171,12 +164,13 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Panel pnlTitleBar;
         private System.Windows.Forms.Label titleLbl;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel bodyPnl;
-        private System.Windows.Forms.Label messageLbl;
         private System.Windows.Forms.PictureBox typePicBox;
+        private System.Windows.Forms.Label messageLbl;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Panel footerPnl;
     }

@@ -71,6 +71,12 @@
     <Compile Include="Forms\MessageBoxOK.Designer.cs">
       <DependentUpon>MessageBoxOK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MessageBoxSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxSuccess.Designer.cs">
+      <DependentUpon>MessageBoxSuccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MessageBoxYesNo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageBoxOK.resx">
       <DependentUpon>MessageBoxOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxSuccess.resx">
+      <DependentUpon>MessageBoxSuccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageBoxYesNo.resx">
       <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
@@ -295,6 +304,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\warning1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-verified-check-circle-for-approved-valid-content-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-question-mark-100.png2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-question-mark-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-question-mark-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

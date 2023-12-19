@@ -40,3 +40,4 @@ C:\Users\DELL\Desktop\httpsgithub.comMYK-OTAKURestaurent-Management-system\Resta
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxNotify.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxOK.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxYesNo.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Forms.MessageBoxSuccess.resources

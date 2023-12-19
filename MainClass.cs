@@ -12,6 +12,7 @@ namespace Restaurant_Management_System
 {
     internal class MainClass
     {
+        public bool result = false;
 
 
 

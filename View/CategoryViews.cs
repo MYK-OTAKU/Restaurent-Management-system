@@ -1,4 +1,7 @@
 ﻿using Guna.UI2.WinForms;
+using MvvmDialogs.FrameworkDialogs.MessageBox;
+using MyMessageBox;
+using Restaurant_Management_System.Forms;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,14 +12,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.XPath;
 
 namespace Restaurant_Management_System
 {
     public partial class CategoryViews : sampleViews
     {
+
         public CategoryViews()
         {
             InitializeComponent();
+
+            // Supposons que tu as déjà créé un GunaDataGridView appelé guna2DataGridView1
+
+            // Définis les propriétés AutoSizeMode pour chaque colonne
+            guna2DataGridView1.Columns["dgvSno"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            guna2DataGridView1.Columns["dgvid"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            guna2DataGridView1.Columns["dgvName"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            guna2DataGridView1.Columns["dgvedit"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            guna2DataGridView1.Columns["dgvdel"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            // Définis les proportions pour chaque colonne avec la propriété FillWeight
+            guna2DataGridView1.Columns["dgvSno"].FillWeight = 0.5f;
+            guna2DataGridView1.Columns["dgvid"].FillWeight = 1;
+            guna2DataGridView1.Columns["dgvName"].FillWeight = 5.5f;
+            guna2DataGridView1.Columns["dgvedit"].FillWeight = 0.5f;
+            guna2DataGridView1.Columns["dgvdel"].FillWeight = 0.5f;
+
+            // Ajuste le mode de redimensionnement pour s'assurer qu'il occupe tout l'espace disponible
+            guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
         // let create table first 
 
@@ -35,10 +60,14 @@ namespace Restaurant_Management_System
             GetData();
 
         }
+
+
+
         public override void BtnAdd_Click(object sender, EventArgs e)
         {
             CategoryAdd frm = new CategoryAdd();
             frm.ShowDialog();
+
             GetData();
         }
 
@@ -51,20 +80,31 @@ namespace Restaurant_Management_System
         {
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
+
                 CategoryAdd frm = new CategoryAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
                 frm.ShowDialog();
+
                 GetData();
+                //  MessageBoxSuccess.Show("Edition Successfully", "Edit");
+
             }
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
-                int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                string qry = (" Delete from category where catID = " + id + "");
-                Hashtable ht = new Hashtable();
-                MainClass.SQL(qry, ht);
-                MessageBox.Show(" Deleted Successfuly ");
-                GetData();
+                // Affiche la boîte de dialogue
+                if (MessageBoxYesNo.Show("Are you sure you want to delete", "Info", MessageBoxType.Question) == DialogResult.Yes)
+                {
+                    // Si le bouton "Yes" est pressé, effectue la suppression
+                    int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
+                    string qry = "DELETE FROM category WHERE catID = " + id;
+                    Hashtable ht = new Hashtable();
+                    MainClass.SQL(qry, ht);
+                    GetData();
+                    MessageBoxSuccess.Show("Deleted Successfully", "TEST");
+                }
+
+
             }
 
 
@@ -74,6 +114,10 @@ namespace Restaurant_Management_System
         private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
         }
     }
 }

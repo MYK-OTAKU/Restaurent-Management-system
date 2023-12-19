@@ -12,6 +12,10 @@ namespace MyMessageBox
 {
     public partial class MessageBoxYesNo : Form
     {
+        public int YesCount { get; private set; }
+        public int NoCount { get; private set; }
+
+
         public MessageBoxYesNo()
         {
             InitializeComponent();
@@ -43,6 +47,7 @@ namespace MyMessageBox
             }
         }
 
+
         public MessageBoxType Type
         {
             set
@@ -53,51 +58,66 @@ namespace MyMessageBox
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.info;
                         break;
                     case MessageBoxType.WARNING:
-                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.warning;
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
                         break;
                     case MessageBoxType.ERROR:
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.error;
                         break;
+                    case MessageBoxType.Succes:
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_verified_check_circle_for_approved_valid_content_96;
+                        break;
+
                     case MessageBoxType.OK:
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
+                        break;
+                    case MessageBoxType.Question:
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_question_mark_50;
                         break;
                 }
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        public virtual void btnClose_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.Cancel;
+
             this.Close();
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
+        public virtual void btnOk_Click(object sender, EventArgs e)
         {
+            NoCount++;
             this.Close();
         }
 
         private void btnOk_MouseEnter(object sender, EventArgs e)
         {
-            btnNo.BackColor = Color.FromArgb(29, 161, 241);
+            Non.BackColor = Color.FromArgb(29, 161, 241);
         }
 
         private void btnOk_MouseLeave(object sender, EventArgs e)
         {
-            btnNo.BackColor = Color.FromArgb(136, 152, 166);
+            Non.BackColor = Color.FromArgb(136, 152, 166);
         }
 
         private void btnYes_Click(object sender, EventArgs e)
         {
 
+
+            this.Close();
+            DialogResult = DialogResult.Yes;
+            //  this.Close();
+
         }
 
         private void btnYes_MouseEnter(object sender, EventArgs e)
         {
-            btnYes.BackColor = Color.FromArgb(29, 161, 241);
+            oui.BackColor = Color.FromArgb(29, 161, 241);
         }
 
         private void btnYes_MouseLeave(object sender, EventArgs e)
         {
-            btnYes.BackColor = Color.FromArgb(136, 152, 166);
+            oui.BackColor = Color.FromArgb(136, 152, 166);
         }
 
         /// <summary>

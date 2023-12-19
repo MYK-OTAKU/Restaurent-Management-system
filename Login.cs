@@ -39,7 +39,7 @@ namespace Restaurant_Management_System
         {  // ON va creer la base de donné et la table 
             if (MainClass.IsValidUser(txtUser.Text, txtPass.Text) == false)
             {
-                MessageBoxOK.Show("Identifiant ou mot de passe incorrect", "Erreur", MessageBoxType.OK);
+                MessageBoxOK.Show("Identifiant ou mot de passe incorrect", "Erreur", MessageBoxType.WARNING);
 
                 // MessageBox.Show("Identifiant ou mot de passe incorrect", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

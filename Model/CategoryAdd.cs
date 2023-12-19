@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant_Management_System.Forms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,7 +41,9 @@ namespace Restaurant_Management_System
 
             if (MainClass.SQL(qry, ht) > 0)
             {
-                MessageBox.Show("Saved Successfully ... ");
+                //MessageBox.Show("Saved Successfully ... ");
+                MessageBoxSuccess.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+
                 id = 0;
                 txtName.Text = "";
                 txtName.Focus();

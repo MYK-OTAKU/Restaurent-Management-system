@@ -17,6 +17,8 @@ namespace Restaurant_Management_System
         INFO,
         WARNING,
         ERROR,
+        Succes,
+        Question,
         OK
     }
 }

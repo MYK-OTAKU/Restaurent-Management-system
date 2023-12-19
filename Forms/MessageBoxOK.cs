@@ -48,10 +48,13 @@ namespace MyMessageBox
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.info;
                         break;
                     case MessageBoxType.WARNING:
-                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.warning;
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
                         break;
                     case MessageBoxType.ERROR:
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.error;
+                        break;
+                    case MessageBoxType.Succes:
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_verified_check_circle_for_approved_valid_content_96;
                         break;
                     case MessageBoxType.OK:
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
@@ -114,6 +117,26 @@ namespace MyMessageBox
         }
 
         private void messageLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void footerPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void titleLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bodyPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnOk_Click_1(object sender, EventArgs e)
         {
 
         }
