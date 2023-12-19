@@ -58,6 +58,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\MessageBoxType.cs" />
+    <Compile Include="Forms\MessageBoxNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxNotify.Designer.cs">
+      <DependentUpon>MessageBoxNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxOK.Designer.cs">
+      <DependentUpon>MessageBoxOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxYesNo.Designer.cs">
+      <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +122,15 @@
     <Compile Include="sampleViews.Designer.cs">
       <DependentUpon>sampleViews.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\MessageBoxNotify.resx">
+      <DependentUpon>MessageBoxNotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxOK.resx">
+      <DependentUpon>MessageBoxOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxYesNo.resx">
+      <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +253,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\11111111111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-danger-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-danger-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

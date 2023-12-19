@@ -14,6 +14,8 @@ using System.Data.SqlClient;
 using Guna.UI2.WinForms;
 
 using System.Data;
+using MyMessageBox;
+
 namespace Restaurant_Management_System
 {
     public partial class Login : Form
@@ -37,9 +39,9 @@ namespace Restaurant_Management_System
         {  // ON va creer la base de donné et la table 
             if (MainClass.IsValidUser(txtUser.Text, txtPass.Text) == false)
             {
+                MessageBoxOK.Show("Identifiant ou mot de passe incorrect", "Erreur", MessageBoxType.OK);
 
-
-                MessageBox.Show("Identifiant ou mot de passe incorrect", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // MessageBox.Show("Identifiant ou mot de passe incorrect", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
