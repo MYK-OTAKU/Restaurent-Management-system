@@ -139,6 +139,12 @@
     <Compile Include="sampleViews.Designer.cs">
       <DependentUpon>sampleViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\StaffViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StaffViews.Designer.cs">
+      <DependentUpon>StaffViews.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TableView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sampleViews.resx">
       <DependentUpon>sampleViews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffViews.resx">
+      <DependentUpon>StaffViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TableView.resx">
       <DependentUpon>TableView.cs</DependentUpon>

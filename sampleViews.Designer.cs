@@ -29,22 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sampleViews));
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.SuspendLayout();
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Separator1.Location = new System.Drawing.Point(38, 141);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(802, 22);
-            this.guna2Separator1.TabIndex = 9;
-            this.guna2Separator1.Click += new System.EventHandler(this.guna2Separator1_Click);
             // 
             // label2
             // 
@@ -112,6 +102,16 @@
             this.txtSearch.TabIndex = 5;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Separator1.Location = new System.Drawing.Point(38, 141);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(802, 22);
+            this.guna2Separator1.TabIndex = 9;
+            this.guna2Separator1.Click += new System.EventHandler(this.guna2Separator1_Click);
+            // 
             // sampleViews
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -133,11 +133,10 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         public System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2ImageButton BtnAdd;
         public Guna.UI2.WinForms.Guna2TextBox txtSearch;
         public System.Windows.Forms.Label label1;
+        public Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management_System.View
 {
-    partial class TableView
+    partial class StaffViews
     {
         /// <summary>
         /// Required designer variable.
@@ -37,10 +37,18 @@
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(22, 34);
+            this.label2.Size = new System.Drawing.Size(92, 30);
+            this.label2.Text = "Staff List";
             // 
             // BtnAdd
             // 
@@ -50,6 +58,7 @@
             this.BtnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
             this.BtnAdd.HoverState.Parent = this.BtnAdd;
             this.BtnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAdd.Location = new System.Drawing.Point(27, 67);
             this.BtnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnAdd.PressedState.Parent = this.BtnAdd;
             this.BtnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -67,7 +76,17 @@
             this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.Location = new System.Drawing.Point(479, 85);
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(475, 61);
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(12, 144);
+            this.guna2Separator1.Size = new System.Drawing.Size(806, 22);
             // 
             // guna2DataGridView1
             // 
@@ -96,6 +115,8 @@
             this.dgvSno,
             this.dgvid,
             this.dgvName,
+            this.dgvPhone,
+            this.dgvRole,
             this.dgvedit,
             this.dgvdel});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -108,7 +129,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(38, 169);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 185);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -124,8 +145,8 @@
             this.guna2DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(809, 253);
-            this.guna2DataGridView1.TabIndex = 11;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(806, 253);
+            this.guna2DataGridView1.TabIndex = 12;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -148,8 +169,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 35;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // dgvSno
             // 
@@ -174,7 +193,19 @@
             this.dgvName.HeaderText = "Name";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
-            this.dgvName.Width = 638;
+            this.dgvName.Width = 400;
+            // 
+            // dgvPhone
+            // 
+            this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.Name = "dgvPhone";
+            this.dgvPhone.ReadOnly = true;
+            // 
+            // dgvRole
+            // 
+            this.dgvRole.HeaderText = "Role";
+            this.dgvRole.Name = "dgvRole";
+            this.dgvRole.ReadOnly = true;
             // 
             // dgvedit
             // 
@@ -200,20 +231,20 @@
             this.dgvdel.ReadOnly = true;
             this.dgvdel.Width = 50;
             // 
-            // TableView
+            // StaffViews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 450);
+            this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Name = "TableView";
-            this.Text = "TableView";
-            this.Load += new System.EventHandler(this.TableView_Load);
-            this.Controls.SetChildIndex(this.guna2Separator1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
+            this.Name = "StaffViews";
+            this.Text = "StaffViews";
+            this.Load += new System.EventHandler(this.StaffViews_Load);
             this.Controls.SetChildIndex(this.txtSearch, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.BtnAdd, 0);
             this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.guna2Separator1, 0);
             this.Controls.SetChildIndex(this.guna2DataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -227,6 +258,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvRole;
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
         private System.Windows.Forms.DataGridViewImageColumn dgvdel;
     }
