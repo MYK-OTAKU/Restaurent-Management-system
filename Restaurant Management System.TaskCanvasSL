@@ -5,7 +5,7 @@
       <Task>
         <blocks>
           <ICodeBlock xsi:type="NoteBlock">
-            <absolutePath>C:\Users\Mohamed\AppData\Local\Temp\TaskCanvasNote_95bff557-5a5a-4b25-bd96-550025b63640.txt</absolutePath>
+            <absolutePath>C:\Users\Mohamed\AppData\Local\Temp\TaskCanvasNote_53e97fce-18c0-4d09-8513-d69afa446195.txt</absolutePath>
             <first>0</first>
             <last>0</last>
             <position>
@@ -19,122 +19,6 @@
             <extension>txt</extension>
           </ICodeBlock>
         </blocks>
-        <tabs>
-          <DocumentTab>
-            <name>MessageBoxYesNo.cs [Design]</name>
-            <path>Forms\MessageBoxYesNo.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxYesNo.cs</absolutePath>
-            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
-            <position>
-              <line>46</line>
-              <column>24</column>
-              <lineHash>4+hGVJ7WQy4A0PSiQoBiOs/f0X6hLuLwd78BDv2e9hY=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>Login.cs [Design]</name>
-            <path>Login.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
-            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
-            <position>
-              <line>23</line>
-              <column>32</column>
-              <lineHash>0ctPa9oTPQRhZ8Eji/942OXOWWFrl1s6PksFQ99IScM=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxType.cs</name>
-            <path>Enums\MessageBoxType.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Enums\MessageBoxType.cs</absolutePath>
-            <position>
-              <line>15</line>
-              <column>21</column>
-              <lineHash>rv7QD8L+bJxdXiHfw61DjgSoygJW8lElNpUuK+q8LAI=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxOK.cs</name>
-            <path>Forms\MessageBoxOK.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxOK.cs</absolutePath>
-            <position>
-              <line>1</line>
-              <column>1</column>
-              <lineHash>iPS/FrJuycuI5Ke6P8n8cjcJh53fU2jIUSohhLCvS10=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>Login.cs</name>
-            <path>Login.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Login.cs</absolutePath>
-            <position>
-              <line>23</line>
-              <column>32</column>
-              <lineHash>0ctPa9oTPQRhZ8Eji/942OXOWWFrl1s6PksFQ99IScM=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxNotify.cs [Design]</name>
-            <path>Forms\MessageBoxNotify.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxNotify.cs</absolutePath>
-            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
-            <position>
-              <line>45</line>
-              <column>23</column>
-              <lineHash>4+hGVJ7WQy4A0PSiQoBiOs/f0X6hLuLwd78BDv2e9hY=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxNotify.Designer.cs</name>
-            <path>Forms\MessageBoxNotify.Designer.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxNotify.Designer.cs</absolutePath>
-            <position>
-              <line>94</line>
-              <column>1</column>
-              <lineHash>8+fCuGbvUenm1uO3joacVPwPSxF9lnEaUWraFP6Z9bI=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxNotify.cs</name>
-            <path>Forms\MessageBoxNotify.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxNotify.cs</absolutePath>
-            <position>
-              <line>45</line>
-              <column>23</column>
-              <lineHash>4+hGVJ7WQy4A0PSiQoBiOs/f0X6hLuLwd78BDv2e9hY=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxYesNo.cs</name>
-            <path>Forms\MessageBoxYesNo.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxYesNo.cs</absolutePath>
-            <position>
-              <line>46</line>
-              <column>24</column>
-              <lineHash>4+hGVJ7WQy4A0PSiQoBiOs/f0X6hLuLwd78BDv2e9hY=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxOK.cs [Design]</name>
-            <path>Forms\MessageBoxOK.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxOK.cs</absolutePath>
-            <viewKind>7651a702-06e5-11d1-8ebd-00a0c90f26ea</viewKind>
-            <position>
-              <line>1</line>
-              <column>1</column>
-              <lineHash>iPS/FrJuycuI5Ke6P8n8cjcJh53fU2jIUSohhLCvS10=</lineHash>
-            </position>
-          </DocumentTab>
-          <DocumentTab>
-            <name>MessageBoxOK.Designer.cs</name>
-            <path>Forms\MessageBoxOK.Designer.cs</path>
-            <absolutePath>C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\Forms\MessageBoxOK.Designer.cs</absolutePath>
-            <position>
-              <line>138</line>
-              <column>1</column>
-              <lineHash>B9vopnwcuzi9yGJP9GFiPBFBXguT0zazzM/BIEHZnhw=</lineHash>
-            </position>
-          </DocumentTab>
-        </tabs>
         <name>TEST</name>
         <selectedBlock>0</selectedBlock>
         <selectedTab>-1</selectedTab>

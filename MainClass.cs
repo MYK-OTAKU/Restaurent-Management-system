@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace Restaurant_Management_System
 {
@@ -51,6 +53,36 @@ namespace Restaurant_Management_System
 
 
 
+
+
+
+        //adding blue effect
+        public static void BlurBackground(Form Model)
+        {
+            Form Background = new Form();
+            using (Model)
+            {
+                Background.StartPosition = FormStartPosition.Manual;
+                Background.FormBorderStyle = FormBorderStyle.None;
+                Background.Opacity = 0.5d;
+                Background.BackColor = Color.Black;
+
+                // Définir la taille maximale sur la taille maximisée de la page principale
+                Background.MaximumSize = pageprincipale.Instance.Size;
+
+                // Utiliser la taille maximale par défaut si elle est disponible, sinon une taille par défaut
+                Size defaultSize = Background.MaximumSize = new Size(2400, 2400);
+
+                Background.Size = defaultSize;
+                Console.WriteLine($"Taille de Background : {Background.Size}");  // Ligne de débogage
+                Background.Location = pageprincipale.Instance.Location;
+                Background.ShowInTaskbar = false;
+                Background.Show();
+                Model.Owner = Background;
+                Model.ShowDialog(Background);
+                Background.Dispose();
+            }
+        }
 
 
 
@@ -111,6 +143,9 @@ namespace Restaurant_Management_System
 
         public static void LoadData(String qry, DataGridView gv, ListBox lb)
         {
+            //serial no in gridview
+            gv.CellFormatting += new DataGridViewCellFormattingEventHandler(gv_CellFormatting);
+
             try
             {
 
@@ -135,6 +170,22 @@ namespace Restaurant_Management_System
                 MessageBox.Show(ex.ToString());
                 con.Close();
             }
+        }
+
+        private static void gv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Guna.UI2.WinForms.Guna2DataGridView gv = (Guna.UI2.WinForms.Guna2DataGridView)sender;
+            int count = 0;
+            foreach (DataGridViewRow row in gv.Rows)
+            {
+                count++;
+                row.Cells[0].Value = count;
+            }
+
+
+
+
+
         }
 
 

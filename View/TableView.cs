@@ -1,5 +1,4 @@
 ﻿using Guna.UI2.WinForms;
-using MvvmDialogs.FrameworkDialogs.MessageBox;
 using MyMessageBox;
 using Restaurant_Management_System.Forms;
 using Restaurant_Management_System.Model;
@@ -13,18 +12,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.XPath;
 
-namespace Restaurant_Management_System
+namespace Restaurant_Management_System.View
 {
-    public partial class CategoryViews : sampleViews
+    public partial class TableView : sampleViews
     {
-
-        public CategoryViews()
+        public TableView()
         {
             InitializeComponent();
+        }
+
+        private void TableView_Load(object sender, EventArgs e)
+        {
+            GetData();
             this.Shown += YourForm_Shown;
         }
+
         private void YourForm_Shown(object sender, EventArgs e)
         {
             // Met ce code dans l'événement Shown pour garantir qu'il est exécuté après l'affichage de la fenêtre
@@ -43,11 +46,15 @@ namespace Restaurant_Management_System
             guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        // let create table first 
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
 
         public void GetData()
         {
-            string qry = " Select * From Category where catName like '%" + txtSearch.Text + "%' ";
+            string qry = " Select * From tables where tname like '%" + txtSearch.Text + "%' ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvName);
@@ -55,38 +62,33 @@ namespace Restaurant_Management_System
             MainClass.LoadData(qry, guna2DataGridView1, lb);
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            GetData();
-
-        }
-
-
-
-        public override void BtnAdd_Click(object sender, EventArgs e)
-        {
-            // CategoryAdd frm = new CategoryAdd();
-            // frm.ShowDialog();
-            MainClass.BlurBackground(new CategoryAdd());
-
-            GetData();
-        }
 
         public override void txtSearch_TextChanged(object sender, EventArgs e)
         {
             GetData();
         }
 
+
+
+        public override void BtnAdd_Click(object sender, EventArgs e)
+        {
+            //  tableAdd frm = new tableAdd();
+            //  frm.ShowDialog();
+            //
+            MainClass.BlurBackground(new tableAdd());
+            GetData();
+        }
+
+
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
 
-                CategoryAdd frm = new CategoryAdd();
+                tableAdd frm = new tableAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
-                //frm.ShowDialog();
-                MainClass.BlurBackground(frm);
+                frm.ShowDialog();
 
                 GetData();
                 //  MessageBoxSuccess.Show("Edition Successfully", "Edit");
@@ -95,14 +97,15 @@ namespace Restaurant_Management_System
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
                 // Affiche la boîte de dialogue
-                if (MessageBoxYesNo.Show("Are you sure you want to delete", "Info", MessageBoxType.Question) == DialogResult.Yes)
+                if (MessageBoxYesNo.Show("Are you sure you want to delete", "Warning", MessageBoxType.Question) == DialogResult.Yes)
                 {
                     // Si le bouton "Yes" est pressé, effectue la suppression
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                    string qry = "DELETE FROM category WHERE catID = " + id;
+                    string qry = "DELETE FROM tables WHERE tid = " + id;
                     Hashtable ht = new Hashtable();
                     MainClass.SQL(qry, ht);
                     GetData();
+
                     MessageBoxSuccess.Show("Deleted Successfully ... ", " ", MessageBoxType.Succes);
 
                 }
@@ -114,13 +117,5 @@ namespace Restaurant_Management_System
 
         }
 
-        private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
     }
 }

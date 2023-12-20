@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Restaurant_Management_System.Model;
+using Restaurant_Management_System.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +18,25 @@ namespace Restaurant_Management_System
         {
             InitializeComponent();
         }
+        private static pageprincipale _instance;
 
+        public static pageprincipale Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new pageprincipale(); // Ou initialisez de manière appropriée
+                }
+                return _instance;
+            }
+        }
         // Method to add controls in Main form
+        //for assessing frm main 
+
+        static pageprincipale _obj;
+
+        //  public static object Instance { get; internal set; }
 
         public void AddControls(Form f)
         {
@@ -44,6 +63,7 @@ namespace Restaurant_Management_System
         private void pageprincipale_Load(object sender, EventArgs e)
         {
             unamee.Text = MainClass.USER;
+            _obj = this;
 
         }
 
@@ -61,6 +81,11 @@ namespace Restaurant_Management_System
         private void guna2ControlBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btntable_Click(object sender, EventArgs e)
+        {
+            AddControls(new TableView());
         }
     }
 }

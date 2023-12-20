@@ -95,6 +95,17 @@
     <Compile Include="Model\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\tableAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\tableAdd.Designer.cs">
+      <DependentUpon>tableAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetdegroupeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetdegroupeDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View\CategoryViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +139,12 @@
     <Compile Include="sampleViews.Designer.cs">
       <DependentUpon>sampleViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\TableView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TableView.Designer.cs">
+      <DependentUpon>TableView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\MessageBoxNotify.resx">
       <DependentUpon>MessageBoxNotify.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\tableAdd.resx">
+      <DependentUpon>tableAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CategoryViews.resx">
       <DependentUpon>CategoryViews.cs</DependentUpon>
@@ -171,7 +191,21 @@
     <EmbeddedResource Include="sampleViews.resx">
       <DependentUpon>sampleViews.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\TableView.resx">
+      <DependentUpon>TableView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="ProjetdegroupeDataSet2.xsc">
+      <DependentUpon>ProjetdegroupeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetdegroupeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetdegroupeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetdegroupeDataSet2.xss">
+      <DependentUpon>ProjetdegroupeDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -316,6 +350,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-question-mark-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-table-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sssssssssssssssssss.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

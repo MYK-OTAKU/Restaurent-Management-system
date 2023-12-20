@@ -333,6 +333,26 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_table_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-table-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_table_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-table-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_table_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-table-50", resourceCulture);
@@ -386,6 +406,16 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap medium_priority_50 {
             get {
                 object obj = ResourceManager.GetObject("medium-priority-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sssssssssssssssssss {
+            get {
+                object obj = ResourceManager.GetObject("sssssssssssssssssss", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

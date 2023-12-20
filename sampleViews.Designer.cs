@@ -137,7 +137,7 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         public System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2ImageButton BtnAdd;
-        private System.Windows.Forms.Label label1;
         public Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        public System.Windows.Forms.Label label1;
     }
 }

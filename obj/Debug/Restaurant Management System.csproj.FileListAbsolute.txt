@@ -41,3 +41,5 @@ C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMess
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxOK.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\MyMessageBox.MessageBoxYesNo.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Forms.MessageBoxSuccess.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.TableView.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.tableAdd.resources

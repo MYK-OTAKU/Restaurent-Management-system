@@ -267,6 +267,7 @@
             this.btntable.TabIndex = 5;
             this.btntable.Text = "Tables";
             this.btntable.TextOffset = new System.Drawing.Point(10, 0);
+            this.btntable.Click += new System.EventHandler(this.btntable_Click);
             // 
             // btnprod
             // 
