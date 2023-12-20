@@ -42,6 +42,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(22, 34);
+            this.label2.Size = new System.Drawing.Size(107, 30);
+            this.label2.Text = "Tables List";
+            // 
             // BtnAdd
             // 
             this.BtnAdd.CheckedState.ImageSize = new System.Drawing.Size(55, 55);
@@ -50,6 +56,7 @@
             this.BtnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
             this.BtnAdd.HoverState.Parent = this.BtnAdd;
             this.BtnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAdd.Location = new System.Drawing.Point(27, 67);
             this.BtnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnAdd.PressedState.Parent = this.BtnAdd;
             this.BtnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -67,7 +74,17 @@
             this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.Location = new System.Drawing.Point(479, 85);
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(475, 61);
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(27, 144);
+            this.guna2Separator1.Size = new System.Drawing.Size(791, 22);
             // 
             // guna2DataGridView1
             // 
@@ -108,7 +125,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(38, 169);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(27, 172);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -124,7 +141,7 @@
             this.guna2DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(809, 253);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(791, 253);
             this.guna2DataGridView1.TabIndex = 11;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -174,7 +191,7 @@
             this.dgvName.HeaderText = "Name";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
-            this.dgvName.Width = 638;
+            this.dgvName.Width = 621;
             // 
             // dgvedit
             // 
@@ -204,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 450);
+            this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "TableView";
             this.Text = "TableView";

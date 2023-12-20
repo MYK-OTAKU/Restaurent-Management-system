@@ -87,5 +87,11 @@ namespace Restaurant_Management_System
         {
             AddControls(new TableView());
         }
+
+        private void btnstaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new StaffViews());
+
+        }
     }
 }

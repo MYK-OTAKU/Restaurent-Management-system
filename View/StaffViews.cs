@@ -43,7 +43,7 @@ namespace Restaurant_Management_System.View
             guna2DataGridView1.Columns["dgvSno"].FillWeight = 0.5f;
             guna2DataGridView1.Columns["dgvid"].FillWeight = 1;
             guna2DataGridView1.Columns["dgvName"].FillWeight = 3.5F;
-            guna2DataGridView1.Columns["dgvPone"].FillWeight = 2;
+            guna2DataGridView1.Columns["dgvPhone"].FillWeight = 2;
             guna2DataGridView1.Columns["dgvRole"].FillWeight = 2;
             guna2DataGridView1.Columns["dgvedit"].FillWeight = 0.5f;
             guna2DataGridView1.Columns["dgvdel"].FillWeight = 0.5f;
@@ -64,18 +64,21 @@ namespace Restaurant_Management_System.View
             //  tableAdd frm = new tableAdd();
             //  frm.ShowDialog();
             //
-            MainClass.BlurBackground(new tableAdd());
+            MainClass.BlurBackground(new StaffAdd());
             GetData();
         }
+
 
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
 
-                tableAdd frm = new tableAdd();
+                StaffAdd frm = new StaffAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
+                frm.txtPhone.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvPhone"].Value);
+                frm.cbRole.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvRole"].Value);
                 frm.ShowDialog();
 
                 GetData();
@@ -89,7 +92,7 @@ namespace Restaurant_Management_System.View
                 {
                     // Si le bouton "Yes" est pressé, effectue la suppression
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                    string qry = "DELETE FROM tables WHERE tid = " + id;
+                    string qry = "DELETE FROM staff WHERE staffID = " + id;
                     Hashtable ht = new Hashtable();
                     MainClass.SQL(qry, ht);
                     GetData();
@@ -107,12 +110,20 @@ namespace Restaurant_Management_System.View
 
         public void GetData()
         {
-            string qry = " Select * From tables where tname like '%" + txtSearch.Text + "%' ";
+            string qry = " Select * From staff where sName like '%" + txtSearch.Text + "%' ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvName);
+            lb.Items.Add(dgvPhone);
+            lb.Items.Add(dgvRole);
+
 
             MainClass.LoadData(qry, guna2DataGridView1, lb);
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

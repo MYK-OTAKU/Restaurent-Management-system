@@ -95,6 +95,12 @@
     <Compile Include="Model\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\StaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StaffAdd.Designer.cs">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\tableAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\StaffAdd.resx">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\tableAdd.resx">
       <DependentUpon>tableAdd.cs</DependentUpon>
@@ -365,6 +374,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\sssssssssssssssssss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-name-tag-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

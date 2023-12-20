@@ -44,3 +44,4 @@ C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restau
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.TableView.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.tableAdd.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.StaffViews.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.StaffAdd.resources

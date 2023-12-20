@@ -244,6 +244,7 @@
             this.btnstaff.TabIndex = 6;
             this.btnstaff.Text = "Staff";
             this.btnstaff.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnstaff.Click += new System.EventHandler(this.btnstaff_Click);
             // 
             // btntable
             // 

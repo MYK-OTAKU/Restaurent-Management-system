@@ -85,8 +85,8 @@
             // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(12, 144);
-            this.guna2Separator1.Size = new System.Drawing.Size(806, 22);
+            this.guna2Separator1.Location = new System.Drawing.Point(27, 144);
+            this.guna2Separator1.Size = new System.Drawing.Size(791, 22);
             // 
             // guna2DataGridView1
             // 
@@ -129,7 +129,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 185);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(27, 172);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -145,7 +145,7 @@
             this.guna2DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(806, 253);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(791, 266);
             this.guna2DataGridView1.TabIndex = 12;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -169,6 +169,8 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 35;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // dgvSno
             // 
@@ -238,7 +240,7 @@
             this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "StaffViews";
-            this.Text = "StaffViews";
+            this.Text = "²";
             this.Load += new System.EventHandler(this.StaffViews_Load);
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.label1, 0);
