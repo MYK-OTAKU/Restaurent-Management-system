@@ -95,6 +95,12 @@
     <Compile Include="Model\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ProductAdd.Designer.cs">
+      <DependentUpon>ProductAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\StaffAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,11 @@
     </Compile>
     <Compile Include="Model\tableAdd.Designer.cs">
       <DependentUpon>tableAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetdegroupeDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetdegroupeDataSet11.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetdegroupeDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -145,6 +156,12 @@
     <Compile Include="sampleViews.Designer.cs">
       <DependentUpon>sampleViews.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductView.Designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\StaffViews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ProductAdd.resx">
+      <DependentUpon>ProductAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\StaffAdd.resx">
       <DependentUpon>StaffAdd.cs</DependentUpon>
@@ -206,6 +226,9 @@
     <EmbeddedResource Include="sampleViews.resx">
       <DependentUpon>sampleViews.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductView.resx">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\StaffViews.resx">
       <DependentUpon>StaffViews.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +236,17 @@
       <DependentUpon>TableView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="ProjetdegroupeDataSet11.xsc">
+      <DependentUpon>ProjetdegroupeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetdegroupeDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetdegroupeDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetdegroupeDataSet11.xss">
+      <DependentUpon>ProjetdegroupeDataSet11.xsd</DependentUpon>
+    </None>
     <None Include="ProjetdegroupeDataSet2.xsc">
       <DependentUpon>ProjetdegroupeDataSet2.xsd</DependentUpon>
     </None>
@@ -377,6 +411,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons8-name-tag-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-package-52.pngss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dss.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\eat-2378726_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fish-2360761_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dairy-products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\R.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\OIP %2813%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\OIP %283%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\download %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\OIP %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\OIF.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\OIP %289%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\OIP %2812%29.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

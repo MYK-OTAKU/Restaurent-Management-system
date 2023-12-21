@@ -187,7 +187,21 @@ namespace Restaurant_Management_System
 
 
         }
+        // for cb fill
+        public static void CBFill(string qry, ComboBox cb)
+        {
+            SqlCommand cmd = new SqlCommand(qry, con);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
 
+            cb.DisplayMember = "name";
+
+            cb.ValueMember = "id";
+            cb.DataSource = dt;
+            cb.SelectedIndex = -1;
+        }
 
     }
 

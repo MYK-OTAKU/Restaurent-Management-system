@@ -292,6 +292,7 @@
             this.btnprod.TabIndex = 4;
             this.btnprod.Text = "Products";
             this.btnprod.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnprod.Click += new System.EventHandler(this.btnprod_Click);
             // 
             // btncate
             // 

@@ -83,9 +83,79 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dairy_products {
+            get {
+                object obj = ResourceManager.GetObject("dairy-products", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__1_ {
+            get {
+                object obj = ResourceManager.GetObject("download (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__2_ {
+            get {
+                object obj = ResourceManager.GetObject("download (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dss {
+            get {
+                object obj = ResourceManager.GetObject("dss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eat_2378726_1280 {
+            get {
+                object obj = ResourceManager.GetObject("eat-2378726_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fish_2360761_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("fish-2360761_960_720", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +306,16 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_package_26w__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-package-26w (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_package_52_pngss {
+            get {
+                object obj = ResourceManager.GetObject("icons8-package-52.pngss", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,6 +496,96 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap medium_priority_50 {
             get {
                 object obj = ResourceManager.GetObject("medium-priority-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIF {
+            get {
+                object obj = ResourceManager.GetObject("OIF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__12_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (12)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__13_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (13)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__13_1 {
+            get {
+                object obj = ResourceManager.GetObject("OIP (13)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__2_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__3_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__9_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R {
+            get {
+                object obj = ResourceManager.GetObject("R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap s {
+            get {
+                object obj = ResourceManager.GetObject("s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

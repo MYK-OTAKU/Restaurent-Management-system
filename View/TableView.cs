@@ -88,7 +88,8 @@ namespace Restaurant_Management_System.View
                 tableAdd frm = new tableAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
-                frm.ShowDialog();
+                // frm.ShowDialog();
+                MainClass.BlurBackground(frm);
 
                 GetData();
                 //  MessageBoxSuccess.Show("Edition Successfully", "Edit");

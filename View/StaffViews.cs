@@ -79,7 +79,8 @@ namespace Restaurant_Management_System.View
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
                 frm.txtPhone.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvPhone"].Value);
                 frm.cbRole.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvRole"].Value);
-                frm.ShowDialog();
+                // frm.ShowDialog();
+                MainClass.BlurBackground(frm);
 
                 GetData();
                 //  MessageBoxSuccess.Show("Edition Successfully", "Edit");

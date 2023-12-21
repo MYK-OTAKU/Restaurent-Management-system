@@ -41,6 +41,7 @@
             this.BtnClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnClose.HoverState.Parent = this.BtnClose;
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnClose.Location = new System.Drawing.Point(170, 11);
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -54,6 +55,7 @@
             this.BtnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnSave.HoverState.Parent = this.BtnSave;
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnSave.Location = new System.Drawing.Point(29, 11);
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -62,7 +64,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(106, 31);
+            this.label1.Location = new System.Drawing.Point(115, 36);
             this.label1.Size = new System.Drawing.Size(134, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Category";
@@ -71,13 +73,13 @@
             // 
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources._11111111111;
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(88, 66);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(88, 71);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 127);
+            this.label2.Location = new System.Drawing.Point(26, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 17);
             this.label2.TabIndex = 1;
@@ -97,7 +99,7 @@
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(29, 164);
+            this.txtName.Location = new System.Drawing.Point(29, 155);
             this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -111,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 305);
+            this.ClientSize = new System.Drawing.Size(309, 295);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(5);

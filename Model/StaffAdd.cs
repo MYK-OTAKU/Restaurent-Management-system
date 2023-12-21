@@ -51,6 +51,7 @@ namespace Restaurant_Management_System.Model
                 txtPhone.Text = "";
                 cbRole.SelectedIndex = -1;
                 txtName.Focus();
+
             }
 
         }
@@ -58,6 +59,11 @@ namespace Restaurant_Management_System.Model
         public override void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

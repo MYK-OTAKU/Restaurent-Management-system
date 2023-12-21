@@ -93,5 +93,11 @@ namespace Restaurant_Management_System
             AddControls(new StaffViews());
 
         }
+
+        private void btnprod_Click(object sender, EventArgs e)
+        {
+            AddControls(new ProductView());
+
+        }
     }
 }

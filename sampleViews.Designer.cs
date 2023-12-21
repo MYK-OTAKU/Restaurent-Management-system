@@ -40,7 +40,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 34);
+            this.label2.Location = new System.Drawing.Point(22, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 30);
             this.label2.TabIndex = 8;
@@ -54,7 +54,7 @@
             this.BtnAdd.HoverState.Parent = this.BtnAdd;
             this.BtnAdd.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.Image")));
             this.BtnAdd.ImageSize = new System.Drawing.Size(55, 55);
-            this.BtnAdd.Location = new System.Drawing.Point(38, 67);
+            this.BtnAdd.Location = new System.Drawing.Point(27, 67);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnAdd.PressedState.Parent = this.BtnAdd;
@@ -67,7 +67,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(497, 61);
+            this.label1.Location = new System.Drawing.Point(475, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 21);
             this.label1.TabIndex = 6;
@@ -90,7 +90,7 @@
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
             this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.icons8_search_52;
-            this.txtSearch.Location = new System.Drawing.Point(501, 85);
+            this.txtSearch.Location = new System.Drawing.Point(479, 85);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -106,9 +106,9 @@
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Separator1.Location = new System.Drawing.Point(38, 141);
+            this.guna2Separator1.Location = new System.Drawing.Point(27, 144);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(802, 22);
+            this.guna2Separator1.Size = new System.Drawing.Size(791, 22);
             this.guna2Separator1.TabIndex = 9;
             this.guna2Separator1.Click += new System.EventHandler(this.guna2Separator1_Click);
             // 
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(862, 473);
+            this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnAdd);

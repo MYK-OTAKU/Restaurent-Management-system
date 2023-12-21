@@ -83,10 +83,10 @@
             this.guna2Panel2.Controls.Add(this.BtnSave);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 318);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 302);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(546, 68);
+            this.guna2Panel2.Size = new System.Drawing.Size(464, 68);
             this.guna2Panel2.TabIndex = 3;
             // 
             // label1
@@ -120,13 +120,14 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(546, 103);
+            this.guna2Panel1.Size = new System.Drawing.Size(464, 103);
             this.guna2Panel1.TabIndex = 2;
             // 
             // SampleAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(546, 386);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(464, 370);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);

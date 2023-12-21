@@ -30,10 +30,10 @@
         {
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +45,7 @@
             this.BtnClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnClose.HoverState.Parent = this.BtnClose;
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnClose.Location = new System.Drawing.Point(245, 15);
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -58,6 +59,7 @@
             this.BtnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnSave.HoverState.Parent = this.BtnSave;
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnSave.Location = new System.Drawing.Point(115, 15);
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
@@ -89,33 +91,24 @@
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.HoverState.Parent = this.txtName;
-            this.txtName.Location = new System.Drawing.Point(23, 141);
-            this.txtName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtName.Location = new System.Drawing.Point(29, 152);
+            this.txtName.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
             this.txtName.ShadowDecoration.Parent = this.txtName;
-            this.txtName.Size = new System.Drawing.Size(208, 36);
-            this.txtName.TabIndex = 0;
+            this.txtName.Size = new System.Drawing.Size(191, 36);
+            this.txtName.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 119);
+            this.label2.Location = new System.Drawing.Point(26, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 11;
             this.label2.Text = "Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(270, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Phone";
             // 
             // txtPhone
             // 
@@ -131,24 +124,24 @@
             this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.HoverState.Parent = this.txtPhone;
-            this.txtPhone.Location = new System.Drawing.Point(273, 141);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPhone.Location = new System.Drawing.Point(245, 152);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "";
             this.txtPhone.SelectedText = "";
             this.txtPhone.ShadowDecoration.Parent = this.txtPhone;
-            this.txtPhone.Size = new System.Drawing.Size(208, 36);
-            this.txtPhone.TabIndex = 1;
+            this.txtPhone.Size = new System.Drawing.Size(191, 36);
+            this.txtPhone.TabIndex = 12;
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Role";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(242, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Phone";
             // 
             // cbRole
             // 
@@ -172,17 +165,27 @@
             "",
             ""});
             this.cbRole.ItemsAppearance.Parent = this.cbRole;
-            this.cbRole.Location = new System.Drawing.Point(23, 223);
+            this.cbRole.Location = new System.Drawing.Point(29, 227);
             this.cbRole.Name = "cbRole";
             this.cbRole.ShadowDecoration.Parent = this.cbRole;
-            this.cbRole.Size = new System.Drawing.Size(208, 36);
-            this.cbRole.TabIndex = 2;
+            this.cbRole.Size = new System.Drawing.Size(191, 36);
+            this.cbRole.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 207);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 17);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Role";
             // 
             // StaffAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 376);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(469, 372);
             this.Controls.Add(this.cbRole);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPhone);
@@ -208,9 +211,9 @@
 
         public Guna.UI2.WinForms.Guna2TextBox txtName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         public Guna.UI2.WinForms.Guna2TextBox txtPhone;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
         public Guna.UI2.WinForms.Guna2ComboBox cbRole;
+        private System.Windows.Forms.Label label4;
     }
 }
