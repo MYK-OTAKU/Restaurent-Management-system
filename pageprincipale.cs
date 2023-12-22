@@ -99,5 +99,11 @@ namespace Restaurant_Management_System
             AddControls(new ProductView());
 
         }
+
+        private void btnpos_Click(object sender, EventArgs e)
+        {
+            POS frm = new POS();
+            frm.ShowDialog();
+        }
     }
 }

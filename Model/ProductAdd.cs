@@ -72,7 +72,7 @@ namespace Restaurant_Management_System.Model
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Images(.jpg, .png)|* .png; *.jpg ";
+            ofd.Filter = "Images(.jpg, .png , .jpeg)|* .png; *.jpg ; *jpeg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 filePath = ofd.FileName;
@@ -113,6 +113,7 @@ namespace Restaurant_Management_System.Model
                 txtName.Text = "";
                 txtPrice.Text = "";
                 cbCat.SelectedIndex = 0;
+
                 cbCat.SelectedIndex = -1;
                 txtName.Focus();
                 txtImage.Image = Restaurant_Management_System.Properties.Resources.OIP__13_;

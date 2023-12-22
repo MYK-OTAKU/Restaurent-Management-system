@@ -47,3 +47,5 @@ C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restau
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.StaffAdd.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.ProductView.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ProductAdd.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.POS.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources

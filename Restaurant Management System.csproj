@@ -95,6 +95,12 @@
     <Compile Include="Model\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ProductAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     </Compile>
     <Compile Include="Model\tableAdd.Designer.cs">
       <DependentUpon>tableAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="ProjetdegroupeDataSet11.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -192,6 +204,9 @@
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\ProductAdd.resx">
       <DependentUpon>ProductAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\tableAdd.resx">
       <DependentUpon>tableAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CategoryViews.resx">
       <DependentUpon>CategoryViews.cs</DependentUpon>
@@ -459,6 +477,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\OIP %2812%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-knife-and-fork-64.pnga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-fork-and-knife-66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-restaurant-table-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-take-away-food-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-delivery-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-chef-hat-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-bill-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-hand-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-bill-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-new-ticket-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-shutdown-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-shutdown-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

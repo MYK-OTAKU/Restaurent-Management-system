@@ -221,6 +221,7 @@
             this.btnpos.TabIndex = 7;
             this.btnpos.Text = "POS";
             this.btnpos.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnpos.Click += new System.EventHandler(this.btnpos_Click);
             // 
             // btnstaff
             // 

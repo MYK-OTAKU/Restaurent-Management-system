@@ -115,7 +115,7 @@
             this.txtUser.BorderColor = System.Drawing.Color.Silver;
             this.txtUser.BorderThickness = 2;
             this.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUser.DefaultText = "";
+            this.txtUser.DefaultText = "ADMIN";
             this.txtUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -135,6 +135,7 @@
             this.txtUser.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtUser.PlaceholderText = "";
             this.txtUser.SelectedText = "";
+            this.txtUser.SelectionStart = 5;
             this.txtUser.ShadowDecoration.Parent = this.txtUser;
             this.txtUser.Size = new System.Drawing.Size(290, 39);
             this.txtUser.TabIndex = 0;
@@ -144,7 +145,7 @@
             this.txtPass.BorderColor = System.Drawing.Color.Silver;
             this.txtPass.BorderThickness = 2;
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.DefaultText = "";
+            this.txtPass.DefaultText = "123";
             this.txtPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -164,6 +165,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.PlaceholderText = "";
             this.txtPass.SelectedText = "";
+            this.txtPass.SelectionStart = 3;
             this.txtPass.ShadowDecoration.Parent = this.txtPass;
             this.txtPass.Size = new System.Drawing.Size(290, 39);
             this.txtPass.TabIndex = 1;
