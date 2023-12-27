@@ -119,11 +119,23 @@
     <Compile Include="Model\tableAdd.Designer.cs">
       <DependentUpon>tableAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\TableSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\TableSelect.Designer.cs">
+      <DependentUpon>TableSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Model\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WaiterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\WaiterSelect.Designer.cs">
+      <DependentUpon>WaiterSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="ProjetdegroupeDataSet11.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -216,8 +228,14 @@
     <EmbeddedResource Include="Model\tableAdd.resx">
       <DependentUpon>tableAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\TableSelect.resx">
+      <DependentUpon>TableSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\WaiterSelect.resx">
+      <DependentUpon>WaiterSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CategoryViews.resx">
       <DependentUpon>CategoryViews.cs</DependentUpon>
