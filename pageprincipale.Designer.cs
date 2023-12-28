@@ -198,6 +198,7 @@
             this.btnkit.TabIndex = 8;
             this.btnkit.Text = "Kitchen";
             this.btnkit.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnkit.Click += new System.EventHandler(this.btnkit_Click);
             // 
             // btnpos
             // 

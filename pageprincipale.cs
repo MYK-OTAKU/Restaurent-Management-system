@@ -105,5 +105,11 @@ namespace Restaurant_Management_System
             POS frm = new POS();
             frm.ShowDialog();
         }
+
+        private void btnkit_Click(object sender, EventArgs e)
+        {
+            AddControls(new KitchenView());
+
+        }
     }
 }

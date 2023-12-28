@@ -255,13 +255,13 @@ namespace Restaurant_Management_System.Model
                 lblWaiter.Visible = false;
             }
         }
-
         private void btnKot_Click(object sender, EventArgs e)
         {
+
             // Sauvegarder les données dans la base de données
             // Créer la table principale
             string qry1 = ""; // Table principale
-            string qry2 = ""; // Table de détails
+                              // Table de détails
             int detailID = 0;
 
             if (MainID == 0)
@@ -277,40 +277,25 @@ namespace Restaurant_Management_System.Model
                 qry1 = "UPDATE tblMain SET status = @status, orderType = @orderType, total = @total, received = @received, change = @change WHERE MainID = @ID";
             }
 
-            // Créer une table de hachage
-            Hashtable ht = new Hashtable();
-
             // Créer la commande pour la table principale
             SqlCommand cmd = new SqlCommand(qry1, MainClass.con);
 
             // Définir les paramètres pour la table principale
-            if (MainID == 0)
-            {
-                // Opération d'insertion, exclure MainID
-                cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
-                cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
-                cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
-                cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
-                cmd.Parameters.AddWithValue("@status", "Pending");
-                cmd.Parameters.AddWithValue("@orderType", OrderType);
-                cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
-                cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
-                cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
-            }
-            else
-            {
-                // Opération de mise à jour, inclure MainID
-                cmd.Parameters.AddWithValue("@ID", MainID);
-                cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
-                cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
-                cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
-                cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
-                cmd.Parameters.AddWithValue("@status", "Pending");
-                cmd.Parameters.AddWithValue("@orderType", OrderType);
-                cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
-                cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
-                cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
-            }
+
+            // Opération d'insertion, exclure MainID
+
+            // Opération de mise à jour, inclure MainID
+            cmd.Parameters.AddWithValue("@ID", MainID);
+            cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
+            cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
+            cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
+            cmd.Parameters.AddWithValue("@status", "Pending");
+            cmd.Parameters.AddWithValue("@orderType", OrderType);
+            cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
+            cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+
 
             if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
 
@@ -324,23 +309,30 @@ namespace Restaurant_Management_System.Model
             {
                 detailID = Convert.ToInt32(row.Cells["dgvid"].Value);
 
-                if (MainID == 0)
+                // Déplacer la déclaration de qry2 ici
+                string qry2 = ""; // Table de détails
+
+                SqlCommand cmd2;
+
+                if (detailID == 0)
                 {
                     // Opération d'insertion pour la table de détails
                     qry2 = "INSERT INTO tblDetails VALUES" +
-                           "(@MainID, @proID, @qty, @price, @amount)";
+                           "(@MainID, @proID, @qty, @price, @amount);" +
+                           "SELECT SCOPE_IDENTITY()";
+
                 }
                 else
                 {
                     // Opération de mise à jour pour la table de détails
-                    qry2 = "UPDATE tblDetails SET proID = @proID, qty = @qty, price = @price, amount = @amount WHERE DetailID = @ID";
-                }
+                    qry2 = "UPDATE tblDetails SET proID = @proID, qty = @qty, price = @price, amount = @amount WHERE DetailID = @DetailID";
 
-                // Créer la commande pour la table de détails
-                SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
+                    // Ajoutez cette ligne pour déclarer et définir le paramètre @DetailID dans le cas où MainID est différent de zéro
+                }
+                cmd2 = new SqlCommand(qry2, MainClass.con);
+                cmd2.Parameters.AddWithValue("@ID", detailID);
 
                 // Définir les paramètres pour la table de détails
-                cmd2.Parameters.AddWithValue("@ID", detailID);
                 cmd2.Parameters.AddWithValue("@MainID", MainID);
                 cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
                 cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
@@ -354,18 +346,21 @@ namespace Restaurant_Management_System.Model
 
                 if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
-                MessageBoxSuccess.Show("Enregistré avec succès... ", " ", MessageBoxType.Succes);
-                MainID = 0;
-                detailID = 0;
-                guna2DataGridView1.Rows.Clear();
-
-                lblTable.Text = "";
-                lblWaiter.Text = "";
-                lblTable.Visible = false;
-                lblWaiter.Visible = false;
-                lblTotal.Text = "00.00";
             }
+            MessageBoxSuccess.Show("Enregistré avec succès... ", " ", MessageBoxType.Succes);
+
+            MainID = 0;
+            detailID = 0;
+            guna2DataGridView1.Rows.Clear();
+
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00.00";
+
         }
+
 
 
     }

@@ -16,8 +16,8 @@ namespace Restaurant_Management_System
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new POS());
+            Application.SetCompatibleTextRenderingDefault(false); ; ; ; ; ; ; ; ; ;
+            Application.Run(new Login());
         }
     }
 }
