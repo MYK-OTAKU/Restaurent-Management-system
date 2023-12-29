@@ -111,6 +111,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\BillList.Designer.cs">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\CategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\BillList.resx">
+      <DependentUpon>BillList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
@@ -563,12 +572,14 @@
   <ItemGroup>
     <None Include="images\icons8-shutdown-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-bill-96.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-<Target Name="InitializeSourceControlInformationFromSourceControlManager">
+  <Target Name="InitializeSourceControlInformationFromSourceControlManager">
     <!-- Définir les actions à exécuter lors de cette cible -->
     <!-- ... -->
-</Target>
-
+  </Target>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
