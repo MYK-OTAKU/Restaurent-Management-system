@@ -383,10 +383,35 @@ namespace Restaurant_Management_System.Model
             SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
             da2.Fill(dt2);
 
+
+            if (dt2.Rows[0]["orderType"].ToString() == "Deligery")  
+            {
+                btnDelivery.Checked = true;
+                lblWaiter.Visible = false;
+                lblTable.Visible = false;
+            }
+            else if (dt2.Rows[0]["orderType"].ToString() == "Take Away")
+            {
+                btnTake.Checked = true;
+                lblWaiter.Visible = false;
+                lblTable.Visible = false;
+            }
+            else 
+            {
+                btnDin.Checked = true;
+                lblWaiter.Visible =true;
+                lblTable.Visible = true;
+            }
+
+
+
+
             guna2DataGridView1.Rows.Clear();
 
             foreach (DataRow item in dt2.Rows)
             {
+               lblTable.Text = item["TableName"].ToString();
+               lblWaiter.Text = item["WaiterName"].ToString();
                 string detailid = item["DetailID"].ToString();
                 string proid = item["proID"].ToString();
                 string proName = item["pName"].ToString();
@@ -398,6 +423,7 @@ namespace Restaurant_Management_System.Model
             }
 
 
+            GetTotal();
 
 
 
@@ -406,7 +432,22 @@ namespace Restaurant_Management_System.Model
 
 
 
+        }
 
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            Checkout frm = new Checkout();
+            frm.MainID = id;
+            frm.amt = Convert.ToDouble(lblTotal.Text);
+            MainClass.BlurBackground(frm);
+            MainID = 0;
+            guna2DataGridView1.Rows.Clear();
+
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00.00";
         }
     }
 }

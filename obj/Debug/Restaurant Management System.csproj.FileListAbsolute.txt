@@ -65,3 +65,4 @@ C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\System
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.View.KitchenView.resources
 C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.BillList.resources
+C:\Users\Mohamed\Desktop\Projet C#\Restaurant Management System\obj\Debug\Restaurant_Management_System.Model.Checkout.resources
