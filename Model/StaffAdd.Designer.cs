@@ -174,8 +174,8 @@
             "Waiter ",
             "Cleaning ",
             "Manager ",
+            "Driver",
             "Other",
-            "",
             "",
             ""});
             this.cbRole.ItemsAppearance.Parent = this.cbRole;

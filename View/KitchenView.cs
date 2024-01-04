@@ -91,25 +91,28 @@ namespace Restaurant_Management_System.View
                 lb5.Margin = new Padding(10, 5, 3, 0);
                 lb5.AutoSize = true;
 
-
-              //  Label lb4 = new Label();
-              //  lb4.ForeColor = Color.White;
-              //  lb4.Margin = new Padding(10, 5, 3, 0);
-              //  lb4.AutoSize = true;
+              
+                Label lb4 = new Label();
+              
+                lb4.ForeColor = Color.White;
+              
+                lb4.Margin = new Padding(10, 5, 3, 0);
+              
+                lb4.AutoSize = true;
 
 
 
                 lb1.Text = "Table : " + dt1.Rows[i]["TableName"].ToString();
                 lb2.Text = "Waiter Name  : " + dt1.Rows[i]["WaiterName"].ToString();
                 lb3.Text = "order Time : " + dt1.Rows[i]["aTime"].ToString();
-               // lb4.Text = "order Date : " + dt1.Rows[i]["aDate"].ToString();
+                lb4.Text = "order Date : " + dt1.Rows[i]["aDate"].ToString();
                 lb5.Text = "order Type : " + dt1.Rows[i]["orderType"].ToString();
 
 
                 p2.Controls.Add(lb1);
                 p2.Controls.Add(lb2);
                 p2.Controls.Add(lb3);
-               // p2.Controls.Add(lb4);
+                p2.Controls.Add(lb4);
                 p2.Controls.Add(lb5);
 
                 p1.Controls.Add(p2);

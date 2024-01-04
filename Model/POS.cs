@@ -22,8 +22,11 @@ namespace Restaurant_Management_System.Model
         {
             InitializeComponent();
         }
+        public int DriverID = 0;
         public string OrderType ="";
         public int MainID = 0;
+        public string customerName = "";
+        public string customerPhone = "";
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -210,6 +213,23 @@ namespace Restaurant_Management_System.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             OrderType = "Delivery ";
+
+
+            AddCustomer frm = new AddCustomer();
+            frm.MainID = MainID;
+            frm.OrderType = OrderType;
+
+            MainClass.BlurBackground(frm);
+            if (frm.txtName.Text != "")// comme take away n'a pas d'info sur le driver
+            {
+                DriverID = frm.DriverID;
+                lblDriverName.Text = " Customer Name: " + frm.txtName.Text + "  Phone: " + frm.txtPhone.Text + "  Driver:  " + frm.cbDriver.Text;
+                lblDriverName.Visible = true;
+                customerName = frm.txtName.Text;
+                customerPhone = frm.txtPhone.Text;
+
+            }
+
         }
 
         private void btnTake_Click(object sender, EventArgs e)
@@ -220,11 +240,26 @@ namespace Restaurant_Management_System.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             OrderType = "Take Away";
+            AddCustomer frm = new AddCustomer();
+            frm.MainID = MainID; 
+            frm.OrderType = OrderType; 
+
+            MainClass.BlurBackground(frm);
+            if (frm.txtName.Text != "")// comme take away n'a pas d'info sur le driver
+            {
+                DriverID =frm.DriverID;
+                lblDriverName.Text = " Customer Name: "+frm.txtName.Text+" Phone: "+frm.txtPhone.Text;
+                lblDriverName.Visible = true;
+                customerName = frm.txtName.Text;
+                customerPhone= frm.txtPhone.Text;
+            }
         }
 
         private void btnDin_Click(object sender, EventArgs e)
         {
             OrderType = "Din In";
+            lblDriverName.Visible = false;
+
 
             //need to create form for table selection and Waiter selection
             TableSelect frm = new TableSelect();
@@ -263,6 +298,12 @@ namespace Restaurant_Management_System.Model
             // Créer la table principale
             string qry1 = ""; // Table principale
                               // Table de détails
+                              // Créer la commande pour la table principale
+
+            // Définir les paramètres pour la table principale
+
+            // Opération d'insertion, exclure MainID
+
             int detailID = 0;
             if (OrderType == "")
             {
@@ -270,11 +311,17 @@ namespace Restaurant_Management_System.Model
                 return;
 
             }
+            if (guna2DataGridView1.Rows.Count == 0)
+            {
+                MessageBoxGunaOk.Show("Veuillez sélectionner au moins un produit", "RMS", MessageBoxType.OK);
+                return;
+            }
+
             if (MainID == 0)
             {
                 // Opération d'insertion pour la table principale
                 qry1 = "INSERT INTO tblMain VALUES" +
-                       "(@aDate, @aTime, @TableName, @WaiterName, @status, @orderType, @total, @received, @change);" +
+                       "(@aDate, @aTime, @TableName, @WaiterName, @status, @orderType, @total, @received, @change, @driverID, @CustName, @CustPhone);" +
                        "SELECT SCOPE_IDENTITY()";
             }
             else
@@ -283,13 +330,7 @@ namespace Restaurant_Management_System.Model
                 qry1 = "UPDATE tblMain SET status = @status, orderType = @orderType, total = @total, received = @received, change = @change WHERE MainID = @ID";
             }
 
-            // Créer la commande pour la table principale
             SqlCommand cmd = new SqlCommand(qry1, MainClass.con);
-
-            // Définir les paramètres pour la table principale
-
-            // Opération d'insertion, exclure MainID
-
             // Opération de mise à jour, inclure MainID
             cmd.Parameters.AddWithValue("@ID", MainID);
             cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
@@ -301,11 +342,14 @@ namespace Restaurant_Management_System.Model
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@driverID", DriverID);
+            cmd.Parameters.AddWithValue("@CustName", customerName);
+            cmd.Parameters.AddWithValue("@CustPhone", customerPhone);
+
+
 
 
             if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
-
-            // Exécuter la commande
             if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); }
             else { cmd.ExecuteNonQuery(); }
 
@@ -365,6 +409,10 @@ namespace Restaurant_Management_System.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             lblTotal.Text = "00.00";
+            lblDriverName.Text = "";
+            btnDelivery.Checked = false;
+            btnDin.Checked = false;
+            btnTake.Checked = false;
 
         }
         public int id = 0;
@@ -380,70 +428,66 @@ namespace Restaurant_Management_System.Model
             }
         }
 
+
         private void LoadEntries()
         {
             string qry = @"Select * from tblMain m 
-                            inner join tblDetails d on m.MainID = d.MainID 
-                            inner join products p on p.pID = d.proID Where m.MainID = " + id + "";
+                    inner join tblDetails d on m.MainID = d.MainID 
+                    inner join products p on p.pID = d.proID Where m.MainID = " + id + "";
             SqlCommand cmd2 = new SqlCommand(qry, MainClass.con);
             DataTable dt2 = new DataTable();
 
             SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
             da2.Fill(dt2);
 
-
-            if (dt2.Rows[0]["orderType"].ToString() == "Delivery")  
+            if (dt2.Rows.Count > 0) // Check if there are rows in the DataTable
             {
-                btnDelivery.Checked = true;
-                btnTake.Checked = false;
-                btnDin.Checked = false;
+                DataRow firstRow = dt2.Rows[0]; // Access the first row for orderType check
 
-                lblWaiter.Visible = false;
-                lblTable.Visible = false;
+                if (firstRow["orderType"].ToString() == "Delivery")
+                {
+                    btnDelivery.Checked = true;
+                    lblWaiter.Visible = false;
+                    lblTable.Visible = false;
+                }
+                else if (firstRow["orderType"].ToString() == "Take Away")
+                {
+                    btnTake.Checked = true;
+                    lblWaiter.Visible = false;
+                    lblTable.Visible = false;
+                }
+                else
+                {
+                    btnDin.Checked = true;
+                    lblWaiter.Visible = true;
+                    lblTable.Visible = true;
+                }
+
+                guna2DataGridView1.Rows.Clear();
+
+                foreach (DataRow item in dt2.Rows)
+                {
+                    lblTable.Text = item["TableName"].ToString();
+                    lblWaiter.Text = item["WaiterName"].ToString();
+                    string detailid = item["DetailID"].ToString();
+                    string proid = item["proID"].ToString();
+                    string proName = item["pName"].ToString();
+                    string qty = item["qty"].ToString();
+                    string price = item["price"].ToString();
+                    string amount = item["amount"].ToString();
+                    object[] obj = { 0, detailid, proid, proName, qty, price, amount };
+                    guna2DataGridView1.Rows.Add(obj);
+                }
+
+                GetTotal();
             }
-            else if (dt2.Rows[0]["orderType"].ToString() == "Take Away")
+            else
             {
-                btnTake.Checked = true;
-                lblWaiter.Visible = false;
-                lblTable.Visible = false;
+                // Handle the case when there are no rows in the DataTable
+                // You may want to show a message or take appropriate action
             }
-            else 
-            {
-                btnDin.Checked = true;
-                lblWaiter.Visible =true;
-                lblTable.Visible = true;
-            }
-
-
-
-
-            guna2DataGridView1.Rows.Clear();
-
-            foreach (DataRow item in dt2.Rows)
-            {
-               lblTable.Text = item["TableName"].ToString();
-               lblWaiter.Text = item["WaiterName"].ToString();
-                string detailid = item["DetailID"].ToString();
-                string proid = item["proID"].ToString();
-                string proName = item["pName"].ToString();
-                string qty = item["qty"].ToString();
-                string price = item["price"].ToString();
-                string amount = item["amount"].ToString();
-                object[] obj = { 0, detailid, proid, proName,qty,price,amount}; 
-                guna2DataGridView1.Rows.Add(obj);
-            }
-
-
-            GetTotal();
-
-
-
-
-
-
-
-
         }
+
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
@@ -459,6 +503,7 @@ namespace Restaurant_Management_System.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             lblTotal.Text = "00.00";
+
         }
 
         private void btnHold_Click(object sender, EventArgs e)
@@ -471,15 +516,22 @@ namespace Restaurant_Management_System.Model
             int detailID = 0;
             if (OrderType == "" )
             {
-            MessageBoxGunaOk.Show("Please select  order type ", " ", MessageBoxType.OK);
+                MessageBoxGunaOk.Show("Please select  order type ", " ", MessageBoxType.OK);
                 return;
 
             }
+
+             if (guna2DataGridView1.Rows.Count == 0)
+            {
+                MessageBoxGunaOk.Show("Veuillez sélectionner au moins un produit", "RMS", MessageBoxType.OK);
+                return;
+            }
+
             if (MainID == 0)
             {
                 // Opération d'insertion pour la table principale
                 qry1 = "INSERT INTO tblMain VALUES" +
-                       "(@aDate, @aTime, @TableName, @WaiterName, @status, @orderType, @total, @received, @change);" +
+                       "(@aDate, @aTime, @TableName, @WaiterName, @status, @orderType, @total, @received, @change, @driverID, @CustName, @CustPhone);" +
                        "SELECT SCOPE_IDENTITY()";
             }
             else
@@ -506,6 +558,9 @@ namespace Restaurant_Management_System.Model
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@driverID", DriverID);
+            cmd.Parameters.AddWithValue("@CustName", customerName);
+            cmd.Parameters.AddWithValue("@CustPhone", customerPhone);
 
 
             if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
@@ -569,6 +624,16 @@ namespace Restaurant_Management_System.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             lblTotal.Text = "00.00";
+            lblDriverName.Text = "";
+
+            btnDelivery.Checked = false;
+            btnDin.Checked = false;
+            btnTake.Checked = false;
+        }
+
+        private void lblDriverName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

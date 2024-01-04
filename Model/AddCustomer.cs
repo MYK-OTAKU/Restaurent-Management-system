@@ -17,6 +17,7 @@ namespace Restaurant_Management_System.Model
             InitializeComponent();
         }
         public string OrderType = "";
+        public string CusName = "";
         public int MainID = 0;
         public int DriverID = 0;
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -37,6 +38,11 @@ namespace Restaurant_Management_System.Model
             {
                 cbDriver.SelectedValue = DriverID;
             }
+        }
+
+        private void cbDriver_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DriverID = Convert.ToInt32(cbDriver.SelectedValue) ;
         }
     }
 }

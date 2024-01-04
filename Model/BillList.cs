@@ -27,7 +27,7 @@ namespace Restaurant_Management_System.Model
         }
         private void loadData()
         {
-            string qry = @"select MainID,TableName, WaiterName,orderType,status, total  from tblMain where status <> 'Pending' " ;
+            string qry = @"select MainID,TableName, WaiterName,orderType,status, total  from tblMain where status <> 'Pending' ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvtable);
@@ -59,12 +59,12 @@ namespace Restaurant_Management_System.Model
                 MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 //frm.ShowDialog();
                 this.Close();
-                
+
                 //  MessageBoxSuccess.Show("Edition Successfully", "Edit");
 
-           
 
-             
+
+
 
 
             }

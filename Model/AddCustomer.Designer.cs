@@ -87,7 +87,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(416, 103);
+            this.guna2Panel1.Size = new System.Drawing.Size(386, 103);
             this.guna2Panel1.TabIndex = 1;
             // 
             // label1
@@ -126,7 +126,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(25, 124);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(337, 222);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(293, 222);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -199,6 +199,7 @@
             this.cbDriver.ShadowDecoration.Parent = this.cbDriver;
             this.cbDriver.Size = new System.Drawing.Size(225, 36);
             this.cbDriver.TabIndex = 0;
+            this.cbDriver.SelectedIndexChanged += new System.EventHandler(this.cbDriver_SelectedIndexChanged);
             // 
             // guna2ControlBox1
             // 
@@ -206,7 +207,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(359, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(329, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -216,7 +217,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(416, 374);
+            this.ClientSize = new System.Drawing.Size(386, 374);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

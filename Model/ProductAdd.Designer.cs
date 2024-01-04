@@ -37,6 +37,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtImage = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +81,17 @@
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 359);
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(638, 68);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(638, 103);
+            // 
             // btnBrowse
             // 
             this.btnBrowse.AutoRoundedCorners = true;
@@ -88,7 +101,7 @@
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
             this.btnBrowse.HoverState.Parent = this.btnBrowse;
-            this.btnBrowse.Location = new System.Drawing.Point(472, 281);
+            this.btnBrowse.Location = new System.Drawing.Point(490, 298);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.ShadowDecoration.Parent = this.btnBrowse;
             this.btnBrowse.Size = new System.Drawing.Size(123, 45);
@@ -205,7 +218,7 @@
             this.txtImage.Location = new System.Drawing.Point(461, 134);
             this.txtImage.Name = "txtImage";
             this.txtImage.ShadowDecoration.Parent = this.txtImage;
-            this.txtImage.Size = new System.Drawing.Size(144, 141);
+            this.txtImage.Size = new System.Drawing.Size(165, 158);
             this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.txtImage.TabIndex = 20;
             this.txtImage.TabStop = false;
@@ -227,6 +240,8 @@
             this.Name = "ProductAdd";
             this.Text = "ProductAdd";
             this.Load += new System.EventHandler(this.ProductAdd_Load);
+            this.Controls.SetChildIndex(this.guna2Panel1, 0);
+            this.Controls.SetChildIndex(this.guna2Panel2, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.txtName, 0);
             this.Controls.SetChildIndex(this.label6, 0);
@@ -236,6 +251,9 @@
             this.Controls.SetChildIndex(this.btnBrowse, 0);
             this.Controls.SetChildIndex(this.txtImage, 0);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
