@@ -1,4 +1,5 @@
-﻿using Restaurant_Management_System.Forms;
+﻿using MyMessageBox;
+using Restaurant_Management_System.Forms;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace Restaurant_Management_System.Model
         {
             InitializeComponent();
         }
-        public string OrderType;
+        public string OrderType ="";
         public int MainID = 0;
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -263,7 +264,12 @@ namespace Restaurant_Management_System.Model
             string qry1 = ""; // Table principale
                               // Table de détails
             int detailID = 0;
+            if (OrderType == "")
+            {
+                MessageBoxGunaOk.Show("Please select a order type ", "RMS", MessageBoxType.OK);
+                return;
 
+            }
             if (MainID == 0)
             {
                 // Opération d'insertion pour la table principale
@@ -338,16 +344,17 @@ namespace Restaurant_Management_System.Model
                 cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
                 cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
                 cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
+                cmd2.Parameters.AddWithValue("@DetailID",detailID );
 
                 if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
 
                 // Exécuter la commande
-                cmd2.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery(); 
 
                 if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
             }
-            MessageBoxSuccess.Show("Enregistré avec succès... ", " ", MessageBoxType.Succes);
+            MessageBoxGunaOk.Show("Enregistré avec succès... ", "RMS ", MessageBoxType.Succes);
 
             MainID = 0;
             detailID = 0;
@@ -368,6 +375,7 @@ namespace Restaurant_Management_System.Model
             if (frm.MainID > 0)
             {
                 id = frm.MainID;
+                MainID = frm.MainID;
                 LoadEntries();
             }
         }
@@ -384,9 +392,12 @@ namespace Restaurant_Management_System.Model
             da2.Fill(dt2);
 
 
-            if (dt2.Rows[0]["orderType"].ToString() == "Deligery")  
+            if (dt2.Rows[0]["orderType"].ToString() == "Delivery")  
             {
                 btnDelivery.Checked = true;
+                btnTake.Checked = false;
+                btnDin.Checked = false;
+
                 lblWaiter.Visible = false;
                 lblTable.Visible = false;
             }
@@ -443,6 +454,116 @@ namespace Restaurant_Management_System.Model
             MainID = 0;
             guna2DataGridView1.Rows.Clear();
 
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00.00";
+        }
+
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+
+            // Sauvegarder les données dans la base de données
+            // Créer la table principale
+            string qry1 = ""; // Table principale
+                              // Table de détails
+            int detailID = 0;
+            if (OrderType == "" )
+            {
+            MessageBoxGunaOk.Show("Please select  order type ", " ", MessageBoxType.OK);
+                return;
+
+            }
+            if (MainID == 0)
+            {
+                // Opération d'insertion pour la table principale
+                qry1 = "INSERT INTO tblMain VALUES" +
+                       "(@aDate, @aTime, @TableName, @WaiterName, @status, @orderType, @total, @received, @change);" +
+                       "SELECT SCOPE_IDENTITY()";
+            }
+            else
+            {
+                // Opération de mise à jour pour la table principale
+                qry1 = "UPDATE tblMain SET status = @status, orderType = @orderType, total = @total, received = @received, change = @change WHERE MainID = @ID";
+            }
+
+            // Créer la commande pour la table principale
+            SqlCommand cmd = new SqlCommand(qry1, MainClass.con);
+
+            // Définir les paramètres pour la table principale
+
+            // Opération d'insertion, exclure MainID
+
+            // Opération de mise à jour, inclure MainID
+            cmd.Parameters.AddWithValue("@ID", MainID);
+            cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
+            cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
+            cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
+            cmd.Parameters.AddWithValue("@status", "Hold");
+            cmd.Parameters.AddWithValue("@orderType", OrderType);
+            cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
+            cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+
+
+            if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+
+            // Exécuter la commande
+            if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); }
+            else { cmd.ExecuteNonQuery(); }
+
+            if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+
+            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            {
+                detailID = Convert.ToInt32(row.Cells["dgvid"].Value);
+
+                // Déplacer la déclaration de qry2 ici
+                string qry2 = ""; // Table de détails
+
+                SqlCommand cmd2;
+
+                if (detailID == 0)
+                {
+                    // Opération d'insertion pour la table de détails
+                    qry2 = "INSERT INTO tblDetails VALUES" +
+                           "(@MainID, @proID, @qty, @price, @amount);" +
+                           "SELECT SCOPE_IDENTITY()";
+
+                }
+                else
+                {
+                    // Opération de mise à jour pour la table de détails
+                    qry2 = "UPDATE tblDetails SET proID = @proID, qty = @qty, price = @price, amount = @amount WHERE DetailID = @DetailID";
+
+                    // Ajoutez cette ligne pour déclarer et définir le paramètre @DetailID dans le cas où MainID est différent de zéro
+                }
+                cmd2 = new SqlCommand(qry2, MainClass.con);
+                cmd2.Parameters.AddWithValue("@ID", detailID);
+
+                // Définir les paramètres pour la table de détails
+                cmd2.Parameters.AddWithValue("@MainID", MainID);
+                cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
+                cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
+                cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
+                cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
+
+                if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+
+                // Exécuter la commande
+                cmd2.ExecuteNonQuery();
+
+                if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+
+            }
+            MessageBoxGunaOk.Show("Enregistré avec succès... ", "RMS", MessageBoxType.Succes);
+
+            MainID = 0;
+            detailID = 0;
+            guna2DataGridView1.Rows.Clear();
+          
             lblTable.Text = "";
             lblWaiter.Text = "";
             lblTable.Visible = false;

@@ -47,7 +47,7 @@
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(3, 3);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(186, 195);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(196, 206);
             this.guna2ShadowPanel1.TabIndex = 0;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
@@ -56,17 +56,17 @@
             this.guna2Panel1.Controls.Add(this.guna2Separator1);
             this.guna2Panel1.Controls.Add(this.lblName);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 144);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 155);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(186, 51);
+            this.guna2Panel1.Size = new System.Drawing.Size(196, 51);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2Separator1
             // 
             this.guna2Separator1.Location = new System.Drawing.Point(3, 0);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(180, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(191, 10);
             this.guna2Separator1.TabIndex = 2;
             // 
             // lblName
@@ -77,7 +77,7 @@
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(0, -3);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(180, 51);
+            this.lblName.Size = new System.Drawing.Size(190, 51);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Product Name";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,10 +85,10 @@
             // txtImage
             // 
             this.txtImage.Image = global::Restaurant_Management_System.Properties.Resources.OIP__3_1;
-            this.txtImage.Location = new System.Drawing.Point(30, 31);
+            this.txtImage.Location = new System.Drawing.Point(33, 24);
             this.txtImage.Name = "txtImage";
             this.txtImage.ShadowDecoration.Parent = this.txtImage;
-            this.txtImage.Size = new System.Drawing.Size(120, 96);
+            this.txtImage.Size = new System.Drawing.Size(131, 115);
             this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.txtImage.TabIndex = 0;
             this.txtImage.TabStop = false;
@@ -100,7 +100,7 @@
             this.Controls.Add(this.guna2ShadowPanel1);
             this.MinimumSize = new System.Drawing.Size(189, 198);
             this.Name = "ucProduct";
-            this.Size = new System.Drawing.Size(189, 198);
+            this.Size = new System.Drawing.Size(199, 209);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtImage)).EndInit();

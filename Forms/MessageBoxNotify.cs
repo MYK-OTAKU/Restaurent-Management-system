@@ -58,10 +58,13 @@ namespace MyMessageBox
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.error;
                         break;
                     case MessageBoxType.Succes:
-                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_verified_check_circle_for_approved_valid_content_96;
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_verified_100;
                         break;
                     case MessageBoxType.OK:
                         this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_danger_96;
+                        break;
+                    case MessageBoxType.GunaOk:
+                        this.typePicBox.Image = global::Restaurant_Management_System.Properties.Resources.icons8_info_96;
                         break;
                 }
             }

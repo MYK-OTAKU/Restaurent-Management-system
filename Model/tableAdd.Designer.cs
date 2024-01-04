@@ -31,6 +31,8 @@
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnClose
@@ -60,6 +62,7 @@
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnSave.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click_1);
             // 
             // label1
             // 
@@ -74,6 +77,17 @@
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(88, 71);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 227);
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(309, 68);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(309, 103);
             // 
             // txtName
             // 
@@ -118,9 +132,14 @@
             this.Name = "tableAdd";
             this.Text = "tableAdd";
             this.Load += new System.EventHandler(this.tableAdd_Load);
+            this.Controls.SetChildIndex(this.guna2Panel1, 0);
+            this.Controls.SetChildIndex(this.guna2Panel2, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.txtName, 0);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

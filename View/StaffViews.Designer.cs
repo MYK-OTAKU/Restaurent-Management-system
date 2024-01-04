@@ -46,7 +46,6 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(22, 34);
             this.label2.Size = new System.Drawing.Size(92, 30);
             this.label2.Text = "Staff List";
             // 
@@ -58,7 +57,6 @@
             this.BtnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
             this.BtnAdd.HoverState.Parent = this.BtnAdd;
             this.BtnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnAdd.Location = new System.Drawing.Point(27, 67);
             this.BtnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnAdd.PressedState.Parent = this.BtnAdd;
             this.BtnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -76,17 +74,7 @@
             this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
-            this.txtSearch.Location = new System.Drawing.Point(479, 85);
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(475, 61);
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(27, 144);
-            this.guna2Separator1.Size = new System.Drawing.Size(791, 22);
             // 
             // guna2DataGridView1
             // 
@@ -240,7 +228,7 @@
             this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "StaffViews";
-            this.Text = "²";
+            this.Text = "";
             this.Load += new System.EventHandler(this.StaffViews_Load);
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.label1, 0);

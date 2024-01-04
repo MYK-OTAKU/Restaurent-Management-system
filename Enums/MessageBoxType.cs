@@ -19,6 +19,9 @@ namespace Restaurant_Management_System
         ERROR,
         Succes,
         Question,
-        OK
+        OK,
+        GunaOk,
+        GunaYesNo
+
     }
 }

@@ -56,7 +56,7 @@ namespace Restaurant_Management_System.Model
 
             if(MainClass.SQL(qry,ht) > 0 )
             {
-                MessageBoxSuccess.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
                 this.Close();
             }
 

@@ -89,7 +89,7 @@ namespace Restaurant_Management_System.View
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
                 // Affiche la boîte de dialogue
-                if (MessageBoxYesNo.Show("Are you sure you want to delete", "Warning", MessageBoxType.Question) == DialogResult.Yes)
+                if (MessageBoxGunaYesNo.Show("Are you sure you want to delete", "RMS", MessageBoxType.Question) == DialogResult.Yes)
                 {
                     // Si le bouton "Yes" est pressé, effectue la suppression
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
@@ -98,7 +98,7 @@ namespace Restaurant_Management_System.View
                     MainClass.SQL(qry, ht);
                     GetData();
 
-                    MessageBoxSuccess.Show("Deleted Successfully ... ", " ", MessageBoxType.Succes);
+                    MessageBoxGunaOk.Show("Deleted Successfully ... ", "RMS ", MessageBoxType.Succes);
 
                 }
 

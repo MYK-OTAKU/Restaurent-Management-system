@@ -313,6 +313,16 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_info_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-info-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_knife_and_fork_64_pnga {
             get {
                 object obj = ResourceManager.GetObject("icons8-knife-and-fork-64.pnga", resourceCulture);
@@ -436,6 +446,16 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_pos_96__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-pos-96 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_question_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-question-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -596,6 +616,16 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_user_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_verified_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-verified-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

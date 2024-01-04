@@ -171,7 +171,7 @@ namespace Restaurant_Management_System.View
         private void b_click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32((sender as Guna.UI2.WinForms.Guna2Button).Tag.ToString());
-            if (MessageBoxYesNo.Show("Are you sure you want to delete", "Warning", MessageBoxType.Question) == DialogResult.Yes)
+            if (MessageBoxGunaYesNo.Show("Are you sure you want to delete", "RMS", MessageBoxType.Question) == DialogResult.Yes)
             {
                 // Si le bouton "Yes" est pressé, effectue la suppression
                 string qry = @" Update tblMain set status = 'Complete' where MainID = @ID";
@@ -180,7 +180,7 @@ namespace Restaurant_Management_System.View
 
                 if (MainClass.SQL(qry, ht) > 0) 
                 {
-                    MessageBoxSuccess.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                    MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
 
                 }
                 GetOrders();

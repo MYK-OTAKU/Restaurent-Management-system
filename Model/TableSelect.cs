@@ -56,5 +56,10 @@ namespace Restaurant_Management_System.Model
         {
 
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

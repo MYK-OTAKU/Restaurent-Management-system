@@ -42,7 +42,7 @@ namespace Restaurant_Management_System
             if (MainClass.SQL(qry, ht) > 0)
             {
                 //MessageBox.Show("Saved Successfully ... ");
-                MessageBoxSuccess.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
 
                 id = 0;
                 txtName.Text = "";

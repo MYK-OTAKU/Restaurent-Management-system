@@ -42,7 +42,7 @@ namespace Restaurant_Management_System.Model
             if (MainClass.SQL(qry, ht) > 0)
             {
                 //MessageBox.Show("Saved Successfully ... ");
-                MessageBoxSuccess.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
 
                 id = 0;
                 txtName.Text = "";
@@ -54,6 +54,11 @@ namespace Restaurant_Management_System.Model
         public override void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnSave_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
