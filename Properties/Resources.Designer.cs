@@ -453,6 +453,16 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_print_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-print-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_question_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-question-100", resourceCulture);

@@ -98,6 +98,7 @@
             this.guna2Panel1.Controls.Add(this.btnExit);
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(800, 103);
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             this.guna2Panel1.Controls.SetChildIndex(this.guna2PictureBox1, 0);
             this.guna2Panel1.Controls.SetChildIndex(this.label1, 0);
             this.guna2Panel1.Controls.SetChildIndex(this.btnExit, 0);
@@ -252,12 +253,11 @@
             this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvdel.FillWeight = 50F;
             this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.icons8_full_recycle_bin_96;
+            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.icons8_print_96;
             this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvdel.MinimumWidth = 50;
             this.dgvdel.Name = "dgvdel";
             this.dgvdel.ReadOnly = true;
-            this.dgvdel.Visible = false;
             this.dgvdel.Width = 50;
             // 
             // btnExit
@@ -298,6 +298,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvtable;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvwaiter;
@@ -307,6 +308,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
         private System.Windows.Forms.DataGridViewImageColumn dgvdel;
-        private Guna.UI2.WinForms.Guna2ControlBox btnExit;
     }
 }
