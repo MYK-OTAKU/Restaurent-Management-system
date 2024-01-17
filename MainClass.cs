@@ -121,7 +121,7 @@ namespace Restaurant_Management_System
                 foreach (DictionaryEntry item in ht)
 
                 {
-                    cmd.Parameters.AddWithValue(item.Key.ToString(), item.Value);
+                    cmd.Parameters.AddWithValue(item.Key.ToString(), item.Value); ; ; ; ; ; ; ; ; ; ; ;
                 }
                 if (con.State == ConnectionState.Closed) { con.Open(); }
                 res = cmd.ExecuteNonQuery();

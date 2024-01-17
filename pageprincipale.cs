@@ -112,5 +112,26 @@ namespace Restaurant_Management_System
             AddControls(new KitchenView());
 
         }
+
+        private void guna2ControlBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnreport_Click(object sender, EventArgs e)
+        {
+            AddControls(new Reports());
+        }
+
+        private void unamee_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pageprincipale_Load_1(object sender, EventArgs e)
+        {
+            unamee.Text = MainClass.USER;
+            _obj = this;
+        }
     }
 }

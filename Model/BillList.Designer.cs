@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvtable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvwaiter = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +44,6 @@
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -78,8 +78,8 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(72, 28);
-            this.label1.Text = "Bill List";
+            this.label1.Size = new System.Drawing.Size(146, 28);
+            this.label1.Text = "Liste de Facture";
             // 
             // guna2PictureBox1
             // 
@@ -189,6 +189,20 @@
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.guna2DataGridView1_CellFormatting);
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(752, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // dgvSno
             // 
             this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -207,13 +221,14 @@
             // 
             // dgvwaiter
             // 
-            this.dgvwaiter.HeaderText = "Waiter";
+            this.dgvwaiter.HeaderText = "Serveur";
             this.dgvwaiter.Name = "dgvwaiter";
             this.dgvwaiter.ReadOnly = true;
             // 
             // dgvtype
             // 
-            this.dgvtype.HeaderText = "Order Type";
+            this.dgvtype.FillWeight = 115F;
+            this.dgvtype.HeaderText = "Commande Type";
             this.dgvtype.Name = "dgvtype";
             this.dgvtype.ReadOnly = true;
             // 
@@ -259,20 +274,6 @@
             this.dgvdel.Name = "dgvdel";
             this.dgvdel.ReadOnly = true;
             this.dgvdel.Width = 50;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(752, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 12;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // BillList
             // 

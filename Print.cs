@@ -21,5 +21,10 @@ namespace Restaurant_Management_System
         {
             btnMax.PerformClick();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -345,6 +345,30 @@
       <DependentUpon>rptBill.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\rptMenu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMenu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSaleByCategory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSaleByCategory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptStaff.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStaff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\SaleByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\SaleByCategory.Designer.cs">
+      <DependentUpon>SaleByCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -394,6 +418,12 @@
     </Compile>
     <Compile Include="View\ProductView.Designer.cs">
       <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
     <Compile Include="View\StaffViews.cs">
       <SubType>Form</SubType>
@@ -464,9 +494,27 @@
     <EmbeddedResource Include="Print.resx">
       <DependentUpon>Print.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptBill.resx">
+      <DependentUpon>rptBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\rptBill.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptBill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptMenu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMenu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSaleByCategory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSaleByCategory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptStaff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStaff.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SaleByCategory.resx">
+      <DependentUpon>SaleByCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CategoryViews.resx">
       <DependentUpon>CategoryViews.cs</DependentUpon>
@@ -498,6 +546,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ProductView.resx">
       <DependentUpon>ProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StaffViews.resx">
       <DependentUpon>StaffViews.cs</DependentUpon>
@@ -792,9 +843,71 @@
   <ItemGroup>
     <None Include="images\icons8-print-96.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="images\z.png" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-order-completed-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-order-completed-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-home-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-medium-priority-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-medium-priority-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-table-100.pngb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-chef-hat-j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-order-completed-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-medium-priority-100.pngs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-order-completed-90.pngN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-installing-updates-96.pngQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-installing-updates-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-restaurant-100.pngS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\DD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-home-64.pngDZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\DZA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\SASAZSA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-pos-68.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="InitializeSourceControlInformationFromSourceControlManager">

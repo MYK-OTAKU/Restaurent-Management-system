@@ -95,6 +95,7 @@ namespace Restaurant_Management_System.Model
                 frm.crystalReportViewer1.ReportSource = cr;
                 frm.crystalReportViewer1.Refresh();
                 frm.Show();
+               
             }
 
 

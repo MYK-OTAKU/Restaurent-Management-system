@@ -50,7 +50,7 @@ namespace Restaurant_Management_System.View
             {
                 p1 = new FlowLayoutPanel();
                 p1.AutoSize = true;
-                p1.Width = 245;
+                p1.Width = 253;
                 p1.Height = 350;
                 p1.FlowDirection = FlowDirection.TopDown;
                 p1.BorderStyle = BorderStyle.FixedSingle;
@@ -61,7 +61,7 @@ namespace Restaurant_Management_System.View
 
                 p2 = new FlowLayoutPanel();
                 p2.BackColor = Color.FromArgb(50, 55, 89);
-                p2.Width = 245;
+                p2.Width = 253;
                 p2.Height = 125;
                 p2.FlowDirection = FlowDirection.TopDown;
                // p2.AutoSize = true;
