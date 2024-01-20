@@ -124,6 +124,9 @@
   <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\error1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-order-completed-901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-order-completed-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="success1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,8 +175,11 @@
   <data name="icons8-table-100.pngb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-table-100.pngb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="11111111111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\11111111111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-name-tag-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-name-tag-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-bill-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-bill-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +196,8 @@
   <data name="icons8-settings-16w (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-settings-16w (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-verified-check-circle-for-approved-valid-content-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-verified-check-circle-for-approved-valid-content-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SASAZSA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\SASAZSA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-fork-and-knife-with-plate-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-fork-and-knife-with-plate-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,9 +210,6 @@
   </data>
   <data name="icons8-restaurant-table-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-restaurant-table-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-danger-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-danger-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DZA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\DZA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,6 +226,9 @@
   <data name="icons8-medium-priority-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-medium-priority-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-question-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-question-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-table-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-table-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,9 +237,6 @@
   </data>
   <data name="icons8-table-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-table-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-shutdown-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-shutdown-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-user-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-user-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,23 +250,20 @@
   <data name="icons8-installing-updates-96.pngQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-installing-updates-96.pngQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-pos-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-pos-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="z" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\z.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-delivery-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-delivery-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-order-completed-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-order-completed-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-name-tag-50.png2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-name-tag-50.png2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medium-priority-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\medium-priority-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-chef-hat-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-chef-hat-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-shutdown-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-shutdown-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\download (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +301,8 @@
   <data name="icons8-settings-16w (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-settings-16w (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SASAZSA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\SASAZSA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-chef-hat-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-chef-hat-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-home-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-home-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,8 +313,8 @@
   <data name="icons8-print-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-print-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-name-tag-50.png2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-name-tag-50.png2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11111111111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\11111111111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bing fork and knife" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\bing fork and knife.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,8 +331,14 @@
   <data name="icons8-medium-priority-100.pngs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-medium-priority-100.pngs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-name-tag-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-name-tag-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-pos-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-pos-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\download.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OIP (13)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\OIP (13).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dss" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\dss.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -348,9 +354,6 @@
   </data>
   <data name="icons8-full-recycle-bin-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-full-recycle-bin-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warning1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OIP (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\OIP (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,8 +373,8 @@
   <data name="icons8-home-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-home-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-chef-hat-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-chef-hat-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-danger-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-danger-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,20 +388,20 @@
   <data name="DD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\DD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-question-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-question-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-verified-check-circle-for-approved-valid-content-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-verified-check-circle-for-approved-valid-content-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\OIF.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\download.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-chef-hat-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-chef-hat-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-table-1001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-table-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OIP (13)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\OIP (13).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-order-completed-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons8-order-completed-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-knife-and-fork-64.pnga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-knife-and-fork-64.pnga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,7 +415,7 @@
   <data name="icons8-pencil-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons8-pencil-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-order-completed-901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons8-order-completed-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OIG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\OIG.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

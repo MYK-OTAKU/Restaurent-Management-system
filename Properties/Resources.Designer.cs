@@ -903,6 +903,16 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OIG {
+            get {
+                object obj = ResourceManager.GetObject("OIG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OIP__12_ {
             get {
                 object obj = ResourceManager.GetObject("OIP (12)", resourceCulture);
