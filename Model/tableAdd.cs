@@ -41,12 +41,25 @@ namespace Restaurant_Management_System.Model
 
             if (MainClass.SQL(qry, ht) > 0)
             {
-                //MessageBox.Show("Saved Successfully ... ");
-                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                int rowsAffected = MainClass.SQL(qry, ht);
 
-                id = 0;
-                txtName.Text = "";
-                txtName.Focus();
+                if (rowsAffected > 0)
+                {
+                    if (id == 0)
+                    {
+                        MainClass.Enres();
+                    }
+                    else
+                    {
+                        MainClass.Modif();
+
+                    }
+
+                    id = 0;
+                    txtName.Text = "";
+                    txtName.Focus();
+                }
+
             }
 
         }

@@ -29,25 +29,35 @@ namespace Restaurant_Management_System
             string qry = "";
             if (id == 0)//Insert 
             {
-                qry = " Insert into category Values (@Name)";
+                qry = "Insert into category Values (@Name)";
             }
             else // update
             {
-                qry = " Update category Set CatName =  @Name where catID = @id";
+                qry = "Update category Set CatName = @Name where catID = @id";
             }
             Hashtable ht = new Hashtable();
             ht.Add("@id", id);
             ht.Add("@Name", txtName.Text);
 
-            if (MainClass.SQL(qry, ht) > 0)
+            int rowsAffected = MainClass.SQL(qry, ht);
+
+            if (rowsAffected > 0)
             {
-                //MessageBox.Show("Saved Successfully ... ");
-                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                if (id == 0)
+                {
+                    MainClass.Enres();
+                }
+                else
+                {
+                    MainClass.Modif();
+                   
+                }
 
                 id = 0;
                 txtName.Text = "";
                 txtName.Focus();
             }
+
 
         }
 

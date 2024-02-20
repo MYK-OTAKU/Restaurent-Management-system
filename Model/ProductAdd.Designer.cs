@@ -52,6 +52,7 @@
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.Location = new System.Drawing.Point(347, 15);
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
+            this.BtnClose.Text = "Fermer";
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnClose.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -66,14 +67,15 @@
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.Location = new System.Drawing.Point(196, 15);
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
+            this.BtnSave.Text = "Enregistrer";
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnSave.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(123, 28);
-            this.label1.Text = "Product Add";
+            this.label1.Size = new System.Drawing.Size(174, 28);
+            this.label1.Text = "Ajouter un Produit";
             // 
             // guna2PictureBox1
             // 
@@ -106,7 +108,7 @@
             this.btnBrowse.ShadowDecoration.Parent = this.btnBrowse;
             this.btnBrowse.Size = new System.Drawing.Size(123, 45);
             this.btnBrowse.TabIndex = 19;
-            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Text = "Parcourir";
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // cbCat
@@ -142,9 +144,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(15, 210);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 17);
+            this.label5.Size = new System.Drawing.Size(71, 17);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Category";
+            this.label5.Text = "Categories";
             // 
             // txtPrice
             // 
@@ -175,9 +177,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(241, 134);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 17);
+            this.label6.Size = new System.Drawing.Size(29, 17);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Price";
+            this.label6.Text = "Prix";
             // 
             // txtName
             // 
@@ -208,18 +210,18 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(15, 134);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 17);
+            this.label7.Size = new System.Drawing.Size(37, 17);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Name";
+            this.label7.Text = "Nom";
             // 
             // txtImage
             // 
-            this.txtImage.Image = global::Restaurant_Management_System.Properties.Resources.OIP__13_1;
+            this.txtImage.Image = global::Restaurant_Management_System.Properties.Resources.icons8_add_image_90__1_1;
             this.txtImage.Location = new System.Drawing.Point(461, 134);
             this.txtImage.Name = "txtImage";
             this.txtImage.ShadowDecoration.Parent = this.txtImage;
-            this.txtImage.Size = new System.Drawing.Size(165, 158);
-            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtImage.Size = new System.Drawing.Size(165, 141);
+            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.txtImage.TabIndex = 20;
             this.txtImage.TabStop = false;
             // 

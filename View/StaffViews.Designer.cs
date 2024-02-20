@@ -46,8 +46,8 @@
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(92, 30);
-            this.label2.Text = "Staff List";
+            this.label2.Size = new System.Drawing.Size(210, 30);
+            this.label2.Text = "Liste des Employé(e)s";
             // 
             // BtnAdd
             // 
@@ -75,6 +75,11 @@
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            // 
+            // label1
+            // 
+            this.label1.Size = new System.Drawing.Size(88, 21);
+            this.label1.Text = "Rechercher";
             // 
             // guna2DataGridView1
             // 
@@ -159,6 +164,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.guna2DataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.guna2DataGridView1_CellFormatting);
             // 
             // dgvSno
             // 
@@ -180,20 +186,20 @@
             // dgvName
             // 
             this.dgvName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvName.HeaderText = "Name";
+            this.dgvName.HeaderText = "Nom";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             this.dgvName.Width = 400;
             // 
             // dgvPhone
             // 
-            this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.HeaderText = "Téléphone";
             this.dgvPhone.Name = "dgvPhone";
             this.dgvPhone.ReadOnly = true;
             // 
             // dgvRole
             // 
-            this.dgvRole.HeaderText = "Role";
+            this.dgvRole.HeaderText = "Rôle";
             this.dgvRole.Name = "dgvRole";
             this.dgvRole.ReadOnly = true;
             // 

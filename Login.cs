@@ -33,7 +33,7 @@ namespace Restaurant_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MainClass.con.Open();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -50,6 +50,7 @@ namespace Restaurant_Management_System
                 this.Hide();
                 pageprincipale pgp = new pageprincipale();
                 pgp.Show();
+                MainClass.con.Close();
             }
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant_Management_System.Forms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -140,12 +141,8 @@ namespace Restaurant_Management_System
         }
         // For loading data from database 
 
-
         public static void LoadData(String qry, DataGridView gv, ListBox lb)
         {
-            //serial no in gridview
-            gv.CellFormatting += new DataGridViewCellFormattingEventHandler(gv_CellFormatting);
-
             try
             {
 
@@ -172,6 +169,34 @@ namespace Restaurant_Management_System
             }
         }
 
+
+    
+    public static void Enres()
+        {
+           
+            MessageBoxGunaOk.Show("Enregistré avec succès ... ", " ", MessageBoxType.Succes);
+            
+        } public static void Modif()
+        {
+           
+            MessageBoxGunaOk.Show("Modifié avec succès ... ", " ", MessageBoxType.Succes);
+
+        }
+        public static void Supp()
+        {
+
+            MessageBoxGunaOk.Show("Supprimé avec succès ... ", " ", MessageBoxType.Succes); ;
+
+        } public static void QSupp()
+        {
+            if(MessageBoxGunaYesNo.Show("Are you sure you want to delete", "RMS", MessageBoxType.Question) == DialogResult.Yes);
+            
+
+        }
+        public static void MC(string Message)
+        {
+
+        } 
         private static void gv_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             Guna.UI2.WinForms.Guna2DataGridView gv = (Guna.UI2.WinForms.Guna2DataGridView)sender;

@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label2 = new System.Windows.Forms.Label();
             this.unamee = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnreport = new Guna.UI2.WinForms.Guna2Button();
             this.btnkit = new Guna.UI2.WinForms.Guna2Button();
@@ -48,96 +46,60 @@
             this.btnhome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2AnimateWindow2 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(779, 12);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox3.TabIndex = 2;
-            this.guna2ControlBox3.Click += new System.EventHandler(this.guna2ControlBox3_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnExit.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(881, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 115);
+            this.label2.Location = new System.Drawing.Point(67, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 61);
+            this.label2.Size = new System.Drawing.Size(128, 32);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Restaurant Management  System";
+            this.label2.Text = "POS System";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // unamee
             // 
             this.unamee.AutoSize = true;
             this.unamee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.unamee.Location = new System.Drawing.Point(20, 20);
+            this.unamee.Location = new System.Drawing.Point(6, 12);
             this.unamee.Name = "unamee";
-            this.unamee.Size = new System.Drawing.Size(52, 21);
+            this.unamee.Size = new System.Drawing.Size(88, 21);
             this.unamee.TabIndex = 3;
-            this.unamee.Text = "label1";
+            this.unamee.Text = "User Name";
             this.unamee.Click += new System.EventHandler(this.unamee_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.Controls.Add(this.guna2Separator1);
             this.guna2Panel2.Controls.Add(this.unamee);
-            this.guna2Panel2.Controls.Add(this.guna2ControlBox3);
-            this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel2.Controls.Add(this.btnExit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.FillColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Panel2.Location = new System.Drawing.Point(195, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(938, 57);
+            this.guna2Panel2.Size = new System.Drawing.Size(975, 57);
             this.guna2Panel2.TabIndex = 4;
             // 
-            // guna2ControlBox2
+            // guna2Separator1
             // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.Enabled = false;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(830, 12);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 1;
-            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
+            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Separator1.Location = new System.Drawing.Point(0, 49);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(975, 10);
+            this.guna2Separator1.TabIndex = 4;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
+            this.guna2Panel1.Controls.Add(this.guna2Button2);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.btnreport);
@@ -153,8 +115,33 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(195, 616);
+            this.guna2Panel1.Size = new System.Drawing.Size(195, 633);
             this.guna2Panel1.TabIndex = 3;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.guna2Button2.BorderRadius = 17;
+            this.guna2Button2.BorderThickness = 1;
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.Location = new System.Drawing.Point(51, 570);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(96, 36);
+            this.guna2Button2.TabIndex = 11;
+            this.guna2Button2.Text = "Exit";
+            this.guna2Button2.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // guna2Button1
             // 
@@ -172,12 +159,12 @@
             this.guna2Button1.Image = global::Restaurant_Management_System.Properties.Resources.icons8_installing_updates_96;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button1.Location = new System.Drawing.Point(48, 524);
+            this.guna2Button1.Location = new System.Drawing.Point(42, 439);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(147, 37);
+            this.guna2Button1.Size = new System.Drawing.Size(153, 37);
             this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Setting";
+            this.guna2Button1.Text = "Paramètre";
             this.guna2Button1.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // btnreport
@@ -195,12 +182,12 @@
             this.btnreport.HoverState.Parent = this.btnreport;
             this.btnreport.Image = global::Restaurant_Management_System.Properties.Resources.icons8_order_completed_90;
             this.btnreport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnreport.Location = new System.Drawing.Point(48, 481);
+            this.btnreport.Location = new System.Drawing.Point(42, 396);
             this.btnreport.Name = "btnreport";
             this.btnreport.ShadowDecoration.Parent = this.btnreport;
-            this.btnreport.Size = new System.Drawing.Size(147, 37);
+            this.btnreport.Size = new System.Drawing.Size(153, 37);
             this.btnreport.TabIndex = 9;
-            this.btnreport.Text = "Report";
+            this.btnreport.Text = "Stats";
             this.btnreport.TextOffset = new System.Drawing.Point(10, 0);
             this.btnreport.Click += new System.EventHandler(this.btnreport_Click);
             // 
@@ -219,12 +206,12 @@
             this.btnkit.HoverState.Parent = this.btnkit;
             this.btnkit.Image = global::Restaurant_Management_System.Properties.Resources.b;
             this.btnkit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnkit.Location = new System.Drawing.Point(48, 438);
+            this.btnkit.Location = new System.Drawing.Point(42, 353);
             this.btnkit.Name = "btnkit";
             this.btnkit.ShadowDecoration.Parent = this.btnkit;
-            this.btnkit.Size = new System.Drawing.Size(147, 37);
+            this.btnkit.Size = new System.Drawing.Size(153, 37);
             this.btnkit.TabIndex = 8;
-            this.btnkit.Text = "Kitchen";
+            this.btnkit.Text = "Cuisine";
             this.btnkit.TextOffset = new System.Drawing.Point(10, 0);
             this.btnkit.Click += new System.EventHandler(this.btnkit_Click);
             // 
@@ -243,10 +230,10 @@
             this.btnpos.HoverState.Parent = this.btnpos;
             this.btnpos.Image = global::Restaurant_Management_System.Properties.Resources.icons8_pos_96;
             this.btnpos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnpos.Location = new System.Drawing.Point(48, 395);
+            this.btnpos.Location = new System.Drawing.Point(42, 310);
             this.btnpos.Name = "btnpos";
             this.btnpos.ShadowDecoration.Parent = this.btnpos;
-            this.btnpos.Size = new System.Drawing.Size(147, 37);
+            this.btnpos.Size = new System.Drawing.Size(153, 37);
             this.btnpos.TabIndex = 7;
             this.btnpos.Text = "POS";
             this.btnpos.TextOffset = new System.Drawing.Point(10, 0);
@@ -267,12 +254,12 @@
             this.btnstaff.HoverState.Parent = this.btnstaff;
             this.btnstaff.Image = global::Restaurant_Management_System.Properties.Resources.icons8_name_tag_50;
             this.btnstaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnstaff.Location = new System.Drawing.Point(48, 352);
+            this.btnstaff.Location = new System.Drawing.Point(42, 267);
             this.btnstaff.Name = "btnstaff";
             this.btnstaff.ShadowDecoration.Parent = this.btnstaff;
-            this.btnstaff.Size = new System.Drawing.Size(147, 37);
+            this.btnstaff.Size = new System.Drawing.Size(153, 37);
             this.btnstaff.TabIndex = 6;
-            this.btnstaff.Text = "Staff";
+            this.btnstaff.Text = "Staffs";
             this.btnstaff.TextOffset = new System.Drawing.Point(10, 0);
             this.btnstaff.Click += new System.EventHandler(this.btnstaff_Click);
             // 
@@ -291,10 +278,10 @@
             this.btntable.HoverState.Parent = this.btntable;
             this.btntable.Image = global::Restaurant_Management_System.Properties.Resources.icons8_table_1002;
             this.btntable.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btntable.Location = new System.Drawing.Point(48, 309);
+            this.btntable.Location = new System.Drawing.Point(42, 224);
             this.btntable.Name = "btntable";
             this.btntable.ShadowDecoration.Parent = this.btntable;
-            this.btntable.Size = new System.Drawing.Size(147, 37);
+            this.btntable.Size = new System.Drawing.Size(153, 37);
             this.btntable.TabIndex = 5;
             this.btntable.Text = "Tables";
             this.btntable.TextOffset = new System.Drawing.Point(10, 0);
@@ -315,12 +302,12 @@
             this.btnprod.HoverState.Parent = this.btnprod;
             this.btnprod.Image = global::Restaurant_Management_System.Properties.Resources.icons8_package_26;
             this.btnprod.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnprod.Location = new System.Drawing.Point(48, 266);
+            this.btnprod.Location = new System.Drawing.Point(42, 181);
             this.btnprod.Name = "btnprod";
             this.btnprod.ShadowDecoration.Parent = this.btnprod;
-            this.btnprod.Size = new System.Drawing.Size(147, 37);
+            this.btnprod.Size = new System.Drawing.Size(153, 37);
             this.btnprod.TabIndex = 4;
-            this.btnprod.Text = "Products";
+            this.btnprod.Text = "Produits";
             this.btnprod.TextOffset = new System.Drawing.Point(10, 0);
             this.btnprod.Click += new System.EventHandler(this.btnprod_Click);
             // 
@@ -339,12 +326,12 @@
             this.btncate.HoverState.Parent = this.btncate;
             this.btncate.Image = global::Restaurant_Management_System.Properties.Resources.icons8_medium_priority_48;
             this.btncate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btncate.Location = new System.Drawing.Point(48, 223);
+            this.btncate.Location = new System.Drawing.Point(42, 138);
             this.btncate.Name = "btncate";
             this.btncate.ShadowDecoration.Parent = this.btncate;
-            this.btncate.Size = new System.Drawing.Size(147, 37);
+            this.btncate.Size = new System.Drawing.Size(153, 37);
             this.btncate.TabIndex = 3;
-            this.btncate.Text = "Catalogue";
+            this.btncate.Text = "Catégories";
             this.btncate.TextOffset = new System.Drawing.Point(10, 0);
             this.btncate.Click += new System.EventHandler(this.btncate_Click);
             // 
@@ -363,12 +350,12 @@
             this.btnhome.HoverState.Parent = this.btnhome;
             this.btnhome.Image = global::Restaurant_Management_System.Properties.Resources.icons8_home_64;
             this.btnhome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnhome.Location = new System.Drawing.Point(48, 180);
+            this.btnhome.Location = new System.Drawing.Point(42, 95);
             this.btnhome.Name = "btnhome";
             this.btnhome.ShadowDecoration.Parent = this.btnhome;
-            this.btnhome.Size = new System.Drawing.Size(147, 37);
+            this.btnhome.Size = new System.Drawing.Size(153, 37);
             this.btnhome.TabIndex = 2;
-            this.btnhome.Text = "Home";
+            this.btnhome.Text = "Acceuil";
             this.btnhome.TextOffset = new System.Drawing.Point(10, 0);
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
@@ -376,7 +363,7 @@
             // 
             this.guna2PictureBox1.AutoRoundedCorners = true;
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderRadius = 46;
+            this.guna2PictureBox1.BorderRadius = 26;
             this.guna2PictureBox1.ErrorImage = global::Restaurant_Management_System.Properties.Resources.icons8_restaurant_100_pngS;
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.icons8_restaurant_1001;
@@ -384,7 +371,7 @@
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(198, 95);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(80, 54);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -394,19 +381,29 @@
             this.CenterPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.CenterPanel.AutoRoundedCorners = true;
             this.CenterPanel.BackColor = System.Drawing.Color.White;
-            this.CenterPanel.Location = new System.Drawing.Point(195, 57);
+            this.CenterPanel.BorderColor = System.Drawing.Color.White;
+            this.CenterPanel.BorderRadius = 284;
+            this.CenterPanel.BorderThickness = 1;
+            this.CenterPanel.CustomBorderThickness = new System.Windows.Forms.Padding(10);
+            this.CenterPanel.Location = new System.Drawing.Point(201, 63);
             this.CenterPanel.Name = "CenterPanel";
             this.CenterPanel.ShadowDecoration.Parent = this.CenterPanel;
-            this.CenterPanel.Size = new System.Drawing.Size(938, 559);
+            this.CenterPanel.Size = new System.Drawing.Size(969, 570);
             this.CenterPanel.TabIndex = 5;
             this.CenterPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CenterPanel_Paint);
+            // 
+            // guna2AnimateWindow2
+            // 
+            this.guna2AnimateWindow2.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_SLIDE;
+            this.guna2AnimateWindow2.Interval = 500;
             // 
             // pageprincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1133, 616);
+            this.ClientSize = new System.Drawing.Size(1170, 633);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.CenterPanel);
@@ -425,10 +422,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnreport;
         private Guna.UI2.WinForms.Guna2Button btnkit;
@@ -437,7 +430,6 @@
         private Guna.UI2.WinForms.Guna2Button btntable;
         private System.Windows.Forms.Label unamee;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2Button btnprod;
         private Guna.UI2.WinForms.Guna2Button btncate;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -445,5 +437,8 @@
         private Guna.UI2.WinForms.Guna2Button btnhome;
         private Guna.UI2.WinForms.Guna2Panel CenterPanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow2;
     }
 }

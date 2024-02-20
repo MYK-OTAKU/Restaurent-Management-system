@@ -65,6 +65,7 @@ namespace Restaurant_Management_System
         {
             unamee.Text = MainClass.USER;
             _obj = this;
+            AddControls(new Home());
 
         }
 
@@ -132,6 +133,11 @@ namespace Restaurant_Management_System
         {
             unamee.Text = MainClass.USER;
             _obj = this;
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

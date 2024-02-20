@@ -45,6 +45,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // label2
+            // 
+            this.label2.Size = new System.Drawing.Size(175, 30);
+            this.label2.Text = "Liste des Produits";
+            // 
             // BtnAdd
             // 
             this.BtnAdd.CheckedState.ImageSize = new System.Drawing.Size(55, 55);
@@ -71,6 +76,11 @@
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            // 
+            // label1
+            // 
+            this.label1.Size = new System.Drawing.Size(88, 21);
+            this.label1.Text = "Rechercher";
             // 
             // guna2DataGridView1
             // 
@@ -155,6 +165,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
+            this.guna2DataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.guna2DataGridView1_CellFormatting);
             // 
             // dgvSno
             // 
@@ -176,14 +187,14 @@
             // dgvName
             // 
             this.dgvName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvName.HeaderText = "Name";
+            this.dgvName.HeaderText = "Nom";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             this.dgvName.Width = 400;
             // 
             // dgvPrice
             // 
-            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.HeaderText = "Prix";
             this.dgvPrice.Name = "dgvPrice";
             this.dgvPrice.ReadOnly = true;
             // 
@@ -196,7 +207,7 @@
             // 
             // dgvCat
             // 
-            this.dgvCat.HeaderText = "Category";
+            this.dgvCat.HeaderText = "Categories";
             this.dgvCat.Name = "dgvCat";
             this.dgvCat.ReadOnly = true;
             // 

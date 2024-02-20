@@ -49,9 +49,11 @@
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.Location = new System.Drawing.Point(245, 15);
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
+            this.BtnClose.Text = "Fermer";
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnClose.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click_1);
             // 
             // BtnSave
             // 
@@ -63,6 +65,7 @@
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.Location = new System.Drawing.Point(115, 15);
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
+            this.BtnSave.Text = "Enregistrer";
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnSave.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -70,9 +73,9 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(93, 28);
+            this.label1.Size = new System.Drawing.Size(207, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Staff Add";
+            this.label1.Text = "Ajouter un Employé(e)";
             // 
             // guna2PictureBox1
             // 
@@ -120,9 +123,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Name";
+            this.label2.Text = "Nom";
             // 
             // txtPhone
             // 
@@ -153,9 +156,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(242, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Phone";
+            this.label3.Text = "Téléphone";
             // 
             // cbRole
             // 
@@ -192,7 +195,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Role";
+            this.label4.Text = "Rôle";
             // 
             // StaffAdd
             // 

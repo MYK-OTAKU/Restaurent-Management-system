@@ -31,6 +31,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnClose
@@ -43,6 +45,7 @@
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.Location = new System.Drawing.Point(170, 11);
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
+            this.BtnClose.Text = "Fermer";
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnClose.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -57,6 +60,7 @@
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.Location = new System.Drawing.Point(29, 11);
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
+            this.BtnSave.Text = "Enregistrer";
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnSave.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -65,9 +69,9 @@
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(115, 36);
-            this.label1.Size = new System.Drawing.Size(134, 28);
+            this.label1.Size = new System.Drawing.Size(167, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Category";
+            this.label1.Text = "Ajouter Categorie";
             // 
             // guna2PictureBox1
             // 
@@ -76,14 +80,25 @@
             this.guna2PictureBox1.Size = new System.Drawing.Size(88, 71);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 227);
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(309, 68);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(309, 103);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "Nom";
             // 
             // txtName
             // 
@@ -120,9 +135,14 @@
             this.Name = "CategoryAdd";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.SetChildIndex(this.guna2Panel1, 0);
+            this.Controls.SetChildIndex(this.guna2Panel2, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.txtName, 0);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

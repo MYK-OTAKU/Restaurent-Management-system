@@ -49,6 +49,7 @@
             this.BtnClose.HoverState.Parent = this.BtnClose;
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
+            this.BtnClose.Text = "Fermer";
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnClose.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -62,14 +63,15 @@
             this.BtnSave.HoverState.Parent = this.BtnSave;
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
+            this.BtnSave.Text = "Enregistrer";
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnSave.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(94, 28);
-            this.label1.Text = "Checkout";
+            this.label1.Size = new System.Drawing.Size(97, 28);
+            this.label1.Text = "Paiement ";
             // 
             // guna2PictureBox1
             // 
@@ -134,9 +136,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(30, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Bill Amount";
+            this.label2.Text = "Facture à payer";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -144,9 +146,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(275, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 17);
+            this.label3.Size = new System.Drawing.Size(93, 17);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Payment Received";
+            this.label3.Text = "Paiement Reçu";
             // 
             // txtReceived
             // 
@@ -203,9 +205,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(30, 203);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(62, 17);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Change";
+            this.label4.Text = "À Rendre";
             // 
             // Checkout
             // 

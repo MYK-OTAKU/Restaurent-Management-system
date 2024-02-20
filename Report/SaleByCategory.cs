@@ -25,12 +25,12 @@ namespace Restaurant_Management_System.Report
 
         private void BtnReport_Click(object sender, EventArgs e)
         {
-            string qry = @"Select * from staff ";
-            SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+            //string qry = @"Select * from staff ";
+           //SqlCommand cmd = new SqlCommand(qry, MainClass.con);
             MainClass.con.Open();
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
+           // SqlDataAdapter da = new SqlDataAdapter(cmd);
+           // da.Fill(dt);
             MainClass.con.Close();
 
             Print frm = new Print();

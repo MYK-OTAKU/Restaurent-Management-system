@@ -43,14 +43,28 @@ namespace Restaurant_Management_System.Model
 
             if (MainClass.SQL(qry, ht) > 0)
             {
-                //MessageBox.Show("Saved Successfully ... ");
-                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                int rowsAffected = MainClass.SQL(qry, ht);
 
+                if (rowsAffected > 0)
+                {
+                    if (id == 0)
+                    {
+                        MainClass.Enres();
+                    }
+                    else
+                    {
+                        MainClass.Modif();
+
+                    }
+
+                    
                 id = 0;
                 txtName.Text = "";
                 txtPhone.Text = "";
                 cbRole.SelectedIndex = -1;
                 txtName.Focus();
+
+                }
 
             }
 
@@ -67,6 +81,11 @@ namespace Restaurant_Management_System.Model
         }
 
         private void BtnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnClose_Click_1(object sender, EventArgs e)
         {
 
         }

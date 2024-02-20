@@ -91,7 +91,7 @@ namespace Restaurant_Management_System.View
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
                 // Affiche la boîte de dialogue
-                if (MessageBoxGunaYesNo.Show("Are you sure you want to delete", "RMS", MessageBoxType.Question) == DialogResult.Yes)
+                if (MessageBoxGunaYesNo.Show("Êtes-vous sûr de vouloir supprimer ce produit ?", "RMS", MessageBoxType.Question) == DialogResult.Yes)
                 {
                     // Si le bouton "Yes" est pressé, effectue la suppression
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
@@ -100,7 +100,7 @@ namespace Restaurant_Management_System.View
                     MainClass.SQL(qry, ht);
                     GetData();
 
-                    MessageBoxGunaOk.Show("Deleted Successfully ... ", "RMS", MessageBoxType.Succes);
+                    MainClass.Supp();
 
                 }
 
@@ -110,7 +110,16 @@ namespace Restaurant_Management_System.View
 
 
         }
+        private void guna2DataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
 
+            // Vérifiez si la colonne actuelle est la colonne "dgvSno" et que la ligne n'est pas la ligne d'en-tête
+            if (e.ColumnIndex == dgvSno.Index && e.RowIndex >= 0)
+            {
+                // Définissez la valeur de la cellule "dgvSno" comme le numéro de ligne + 1
+                e.Value = e.RowIndex + 1;
+            }
+        }
         public void GetData()
         {
             string qry = " select pID,pName,pPrice ,CategoryID,c.catName from products p inner join category c on c.catID = p.CategoryID where pName like '%" + txtSearch.Text + "%' ";

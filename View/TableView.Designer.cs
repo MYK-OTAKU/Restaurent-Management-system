@@ -44,9 +44,8 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(22, 34);
-            this.label2.Size = new System.Drawing.Size(107, 30);
-            this.label2.Text = "Tables List";
+            this.label2.Size = new System.Drawing.Size(162, 30);
+            this.label2.Text = " Liste des Tables";
             // 
             // BtnAdd
             // 
@@ -56,7 +55,6 @@
             this.BtnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
             this.BtnAdd.HoverState.Parent = this.BtnAdd;
             this.BtnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnAdd.Location = new System.Drawing.Point(27, 67);
             this.BtnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnAdd.PressedState.Parent = this.BtnAdd;
             this.BtnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -74,17 +72,12 @@
             this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
-            this.txtSearch.Location = new System.Drawing.Point(479, 85);
             this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(475, 61);
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(27, 144);
-            this.guna2Separator1.Size = new System.Drawing.Size(791, 22);
+            this.label1.Size = new System.Drawing.Size(88, 21);
+            this.label1.Text = "Rechercher";
             // 
             // guna2DataGridView1
             // 
@@ -167,6 +160,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.guna2DataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.guna2DataGridView1_CellFormatting);
             // 
             // dgvSno
             // 
@@ -188,7 +182,7 @@
             // dgvName
             // 
             this.dgvName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvName.HeaderText = "Name";
+            this.dgvName.HeaderText = "Nom";
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             this.dgvName.Width = 621;

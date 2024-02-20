@@ -89,15 +89,15 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 553);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 516);
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(800, 11);
+            this.guna2Panel2.Size = new System.Drawing.Size(806, 11);
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.btnExit);
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(800, 103);
+            this.guna2Panel1.Size = new System.Drawing.Size(806, 103);
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             this.guna2Panel1.Controls.SetChildIndex(this.guna2PictureBox1, 0);
             this.guna2Panel1.Controls.SetChildIndex(this.label1, 0);
@@ -162,7 +162,7 @@
             this.guna2DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(755, 382);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(761, 345);
             this.guna2DataGridView1.TabIndex = 11;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -196,7 +196,7 @@
             this.btnExit.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnExit.HoverState.Parent = this.btnExit;
             this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(752, 3);
+            this.btnExit.Location = new System.Drawing.Point(758, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
             this.btnExit.Size = new System.Drawing.Size(45, 29);
@@ -215,31 +215,35 @@
             // 
             // dgvtable
             // 
+            this.dgvtable.FillWeight = 95.37037F;
             this.dgvtable.HeaderText = "Table";
             this.dgvtable.Name = "dgvtable";
             this.dgvtable.ReadOnly = true;
             // 
             // dgvwaiter
             // 
+            this.dgvwaiter.FillWeight = 95.37037F;
             this.dgvwaiter.HeaderText = "Serveur";
             this.dgvwaiter.Name = "dgvwaiter";
             this.dgvwaiter.ReadOnly = true;
             // 
             // dgvtype
             // 
-            this.dgvtype.FillWeight = 115F;
-            this.dgvtype.HeaderText = "Commande Type";
+            this.dgvtype.FillWeight = 133.5185F;
+            this.dgvtype.HeaderText = "Type de Commande ";
             this.dgvtype.Name = "dgvtype";
             this.dgvtype.ReadOnly = true;
             // 
             // dgvStatus
             // 
+            this.dgvStatus.FillWeight = 95.37037F;
             this.dgvStatus.HeaderText = "Status ";
             this.dgvStatus.Name = "dgvStatus";
             this.dgvStatus.ReadOnly = true;
             // 
             // dgvtotal
             // 
+            this.dgvtotal.FillWeight = 95.37037F;
             this.dgvtotal.HeaderText = "Total";
             this.dgvtotal.Name = "dgvtotal";
             this.dgvtotal.ReadOnly = true;
@@ -279,7 +283,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 564);
+            this.ClientSize = new System.Drawing.Size(806, 527);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "BillList";
             this.Text = "BillList";

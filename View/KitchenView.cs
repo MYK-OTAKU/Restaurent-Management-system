@@ -174,7 +174,11 @@ namespace Restaurant_Management_System.View
         private void b_click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32((sender as Guna.UI2.WinForms.Guna2Button).Tag.ToString());
+<<<<<<< Updated upstream
             if (MessageBoxGunaYesNo.Show("Are you sure you want to complete this order?", "RMS", MessageBoxType.Question) == DialogResult.Yes)
+=======
+            if (MessageBoxGunaYesNo.Show("Êtes-vous sûr de vouloir valider cette commande ?", "RMS", MessageBoxType.Question) == DialogResult.Yes)
+>>>>>>> Stashed changes
             {
                 string qry = @" Update tblMain set status = 'Complete' where MainID = @ID";
                 Hashtable ht = new Hashtable();
@@ -182,7 +186,14 @@ namespace Restaurant_Management_System.View
 
                 if (MainClass.SQL(qry, ht) > 0)
                 {
+<<<<<<< Updated upstream
                     MessageBoxGunaOk.Show("Order Completed Successfully", "", MessageBoxType.Succes);
+=======
+                    MessageBoxGunaOk.Show("Commande validée avec succès ...", "RMS" , MessageBoxType.Succes);
+
+                    
+
+>>>>>>> Stashed changes
                 }
                 GetOrders();
             }

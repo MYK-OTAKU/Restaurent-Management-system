@@ -22,7 +22,7 @@ namespace Restaurant_Management_System.Model
         public int MainID;
         private void Checkout_Load(object sender, EventArgs e)
         {
-            txtBillAmount.Text = amt.ToString();
+             txtBillAmount.Text = amt.ToString();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace Restaurant_Management_System.Model
 
             if(MainClass.SQL(qry,ht) > 0 )
             {
-                MessageBoxGunaOk.Show("Saved Successfully ... ", " ", MessageBoxType.Succes);
+                MessageBoxGunaOk.Show("Paiement effectué avec succes Success ... ", "RMS", MessageBoxType.Succes);
                 this.Close();
             }
 

@@ -45,6 +45,7 @@
             this.BtnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.Location = new System.Drawing.Point(170, 11);
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
+            this.BtnClose.Text = "Fermer";
             this.BtnClose.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnClose.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnClose.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -59,6 +60,7 @@
             this.BtnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.Location = new System.Drawing.Point(29, 11);
             this.BtnSave.ShadowDecoration.Parent = this.BtnSave;
+            this.BtnSave.Text = "Enregistrer";
             this.BtnSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnSave.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.BtnSave.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.None;
@@ -67,9 +69,9 @@
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(115, 36);
-            this.label1.Size = new System.Drawing.Size(129, 28);
+            this.label1.Size = new System.Drawing.Size(164, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tables Details";
+            this.label1.Text = "Ajouter une Table";
             // 
             // guna2PictureBox1
             // 
@@ -118,9 +120,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "Nom";
             // 
             // tableAdd
             // 

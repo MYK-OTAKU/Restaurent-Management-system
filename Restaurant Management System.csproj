@@ -909,6 +909,18 @@
   <ItemGroup>
     <None Include="images\icons8-pos-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-add-image-90 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="InitializeSourceControlInformationFromSourceControlManager">
     <!-- Définir les actions à exécuter lors de cette cible -->
