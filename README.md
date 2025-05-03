@@ -37,7 +37,7 @@ A desktop-based restaurant management system built using **C# and .NET Framework
 
 ### 🍽️ POS System
 ![POS 1](./screenshots/pos%20(1).png)
-![POS 2](./pos%20(2).png)
+
 
 ### 📋 Order List
 ![Commandes 1](./screenshots/listecommande%20(1).png)
@@ -48,10 +48,10 @@ A desktop-based restaurant management system built using **C# and .NET Framework
 ![Cuisine 2](./screenshots/cuisine%20(2).png)
 
 ### 📈 Statistics
-![Stats](./screenshots/Stat(%20(1).png)
+![Stats](./screenshots/Stat.png))
 
 ### 🧾 Invoice View
-![Facture](./screenshots/fact(%20(1).png)
+![Facture](./screenshots/fact.png))
 
 ### ❌ Error Login
 ![Erreur](./screenshots/ERRER%20(1).png)
