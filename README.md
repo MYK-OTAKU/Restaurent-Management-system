@@ -27,6 +27,37 @@ A desktop-based restaurant management system built using **C# and .NET Framework
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Login
+![Login](./screenshots/logins%20(1).png)
+
+### 📊 Dashboard
+![Dashboard](./screenshots/dashboard%20(1).png)
+
+### 🍽️ POS System
+![POS 1](./screenshots/pos%20(1).png)
+![POS 2](./pos%20(2).png)
+
+### 📋 Order List
+![Commandes 1](./screenshots/listecommande%20(1).png)
+![Commandes 2](./screenshots/listecommande%20(2).png)
+
+### 🍳 Kitchen Management
+![Cuisine 1](./screenshots/cuisine%20(1).png)
+![Cuisine 2](./screenshots/cuisine%20(2).png)
+
+### 📈 Statistics
+![Stats](./screenshots/Stat(%20(1).png)
+
+### 🧾 Invoice View
+![Facture](./screenshots/fact(%20(1).png)
+
+### ❌ Error Login
+![Erreur](./screenshots/ERRER%20(1).png)
+
+---
+
 ## 📁 Project Structure
 
 Restaurent-Management-system/
@@ -46,13 +77,17 @@ Restaurent-Management-system/
 
 └── Restaurent-Management-system.csproj
 
+
+
 ---
 
 ## 🔗 Related Project
 
 A modern web version of this app is under development:  
 👉 [Web RMS on GitHub](https://github.com/MYK-OTAKU/MyNewApp)  
-🌐 [Live Preview (Guest Login)](https://mohamedyehiyakoita.vercel.app)
+🌐 [Live Preview (Guest Login)](https://mohamedyehiyakoita.vercel.app)  
+🧑‍💻 **Username**: `Guest`  
+🔐 **Password**: `123`
 
 ---
 
